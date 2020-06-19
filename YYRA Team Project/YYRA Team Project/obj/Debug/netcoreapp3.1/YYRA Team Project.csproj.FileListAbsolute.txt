@@ -107,3 +107,4 @@ C:\Users\gamer\Source\Repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\
 C:\Users\gamer\Source\Repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.dll
 C:\Users\gamer\Source\Repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.pdb
 C:\Users\gamer\Source\Repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserTable.cshtml.g.cs
+C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserLogin.cshtml.g.cs

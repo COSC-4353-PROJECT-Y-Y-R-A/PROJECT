@@ -4,19 +4,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using RazorPagesTutorial.Models;
 using YYRA_Team_Project.Models;
 
 namespace YYRA_Team_Project
 {
     public class UserTableModel : PageModel
     {
-        public IList<USER> Users { get; set; }
+        public IList<User> Users { get; set; }
         public int currentID;
 
         public void OnGetAsync(int? id)
         {
-            Users = new List<USER>();
+            Users = new List<User>();
             for (int i = 0; i < 0; i++)
             {
                 //Msg1 = "In";
