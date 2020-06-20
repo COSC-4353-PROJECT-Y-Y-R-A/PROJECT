@@ -9,6 +9,9 @@ namespace YYRA_Team_Project.Models
         private const string username_error_mesage = "The Username must be longer than 8 characters, must have one letter and one number.";
         private const string password_error_message = "The Password must be longer than 8 characters, have one uppercase letter, one lowercase letter, one number, and one special character. Special characters include (@,$,!,%,*,?,&)";
         private const string email_error_message = "The email address must be a valid email address.";
+        private const string address1_error_message = "The addresses length must be between 1 and 100 characters.";
+        private const string city_error_message = "The city length must be between 1 and 100 characters.";
+        private const string zipcode_error_message = "The zipcode length must be between 5 and 9 characters.";
         [Key]
         [Display(Name = "U_ID")]
         public int U_ID { get; set; }
@@ -30,18 +33,22 @@ namespace YYRA_Team_Project.Models
         public string U_LName { get; set; }
 
         [Display(Name = "Address 1")]
+        [Required, MinLength(1, ErrorMessage = address1_error_message), MaxLength(100, ErrorMessage = address1_error_message)]
         public string U_Address1 { get; set; }
 
         [Display(Name = "Address 2")]
+        [MinLength(1, ErrorMessage = address1_error_message), MaxLength(100, ErrorMessage = address1_error_message)]
         public string U_Address2 { get; set; }
 
         [Display(Name = "City")]
+        [Required, MinLength(1, ErrorMessage = city_error_message), MaxLength(100, ErrorMessage = city_error_message)]
         public string U_City { get; set; }
 
         [Display(Name = "State")]
         public string U_State { get; set; }
 
         [Display(Name = "Zip code")]
+        [Required, MinLength(5, ErrorMessage = zipcode_error_message),MaxLength(9, ErrorMessage = zipcode_error_message)]
         public string U_Zipcode { get; set; }
 
         [Display(Name = "Email")]
