@@ -221,3 +221,116 @@ C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Projec
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.xml
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.genruntimeconfig.cache
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.exe
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.deps.json
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.runtimeconfig.json
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.runtimeconfig.dev.json
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.Views.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.Views.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csprojAssemblyReference.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfoInputs.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfo.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CoreCompileInputs.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.input.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.output.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorCoreGenerate.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserLogin.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserTable.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorTargetAssemblyInfo.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorTargetAssemblyInfo.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.Views.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CopyComplete
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.Manifest.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.xml
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.genruntimeconfig.cache

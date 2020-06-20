@@ -1,44 +1,37 @@
-﻿@page "{id:int?}"
-@model UserLoginModel
+﻿@page
+@model YYRA_Team_Project.Pages.Users.RegisterModel
 @{
-    ViewData["Title"] = "Register";
-
 }
-
-
-<div class="card-deck">
-    <div class="card-header" style="color:red;Background:white;border-style:inherit;animation:ease-in-out">
-        <h1>Register</h1>
-    </div>
-    <div class="w-25">
+<style>
+    .column-left {
+        float: left;
+        width: 50%;
+        margin-left: 25%;
+    }
+</style>
+<div class="row">
+    <div class="column-left">
+        <h3>Register</h3>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="@Model.LOGIN_USER.U_ID" class="control-label"></label>
-                <input asp-for="@Model.LOGIN_USER.U_ID" type="text" class="form-control" />
-                <span asp-validation-for="@Model.LOGIN_USER.U_ID" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Username" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_Username" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_Username" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="@Model.LOGIN_USER.U_Pass" class="control-label"></label>
-                <input asp-for="@Model.LOGIN_USER.U_Pass" type="password" class="form-control" />
-                <span asp-validation-for="@Model.LOGIN_USER.U_Pass" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Pass" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_Pass" type="password" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_Pass" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="@Model.LOGIN_USER.U_Pass" class="control-label"></label>
-                <input asp-for="@Model.LOGIN_USER.U_Pass" type="password" class="form-control" />
-                <span asp-validation-for="@Model.LOGIN_USER.U_Pass" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Email" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_Email" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Register" class="btn btn-primary" />
-            </div>
-            <div class="card-link">
-                <a asp-page="/USERS/UserLogin">Already have an account? Login</a>
+            <div class="form-group text-center">
+                <input type="submit" value="Create" class="btn btn-primary text-center" />
             </div>
         </form>
     </div>
-
 </div>
-
-@*@section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }*@
