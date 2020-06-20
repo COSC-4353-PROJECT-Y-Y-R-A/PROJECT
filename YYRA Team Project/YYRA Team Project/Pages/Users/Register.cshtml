@@ -1,0 +1,44 @@
+﻿@page "{id:int?}"
+@model UserLoginModel
+@{
+    ViewData["Title"] = "Register";
+
+}
+
+
+<div class="card-deck">
+    <div class="card-header" style="color:red;Background:white;border-style:inherit;animation:ease-in-out">
+        <h1>Register</h1>
+    </div>
+    <div class="w-25">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.LOGIN_USER.U_ID" class="control-label"></label>
+                <input asp-for="@Model.LOGIN_USER.U_ID" type="text" class="form-control" />
+                <span asp-validation-for="@Model.LOGIN_USER.U_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.LOGIN_USER.U_Pass" class="control-label"></label>
+                <input asp-for="@Model.LOGIN_USER.U_Pass" type="password" class="form-control" />
+                <span asp-validation-for="@Model.LOGIN_USER.U_Pass" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.LOGIN_USER.U_Pass" class="control-label"></label>
+                <input asp-for="@Model.LOGIN_USER.U_Pass" type="password" class="form-control" />
+                <span asp-validation-for="@Model.LOGIN_USER.U_Pass" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+            <div class="card-link">
+                <a asp-page="/USERS/UserLogin">Already have an account? Login</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+@*@section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }*@

@@ -220,3 +220,4 @@ C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Projec
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.Manifest.cache
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.xml
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.genruntimeconfig.cache
+C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
