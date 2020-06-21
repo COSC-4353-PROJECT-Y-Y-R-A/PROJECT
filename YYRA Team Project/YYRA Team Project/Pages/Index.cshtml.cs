@@ -17,7 +17,7 @@ namespace YYRA_Team_Project.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public void OnGet() //handler method
         {
 
         }

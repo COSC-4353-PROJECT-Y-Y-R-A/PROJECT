@@ -9,15 +9,18 @@ namespace YYRA_Team_Project.Models
     public class Quote
     {
         /*
-         * delivery date
          * gallons requested 
-         * address
-         * price/gallon
-         * 
+         * delivery address
+         * delivery date
+         * suggested price/gallon
+         * total amount due
          * 
          */
 
-        [Display(Name = "Gallons")]
+       
+        public int ID { get; set; }
+
+        [Display(Name = "Gallons Requested")]
         public int Q_Gallons { get; set; }
 
         [Display(Name = "Delivery Address")]
