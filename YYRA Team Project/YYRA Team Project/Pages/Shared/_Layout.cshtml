@@ -19,13 +19,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Users/UserTable">User Table</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Users/UserLogin">User Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Users/UserProfile">User Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Users/Register">Register Page</a>
@@ -34,7 +34,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Users/FuelQuoteForm">Fuel Quote Form</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Users/QuoteHistory/index">Fuel Quote History</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Users/QuoteHistory/Index">Fuel Quote History</a>
                         </li>
                     </ul>
                 </div>
@@ -46,12 +46,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - YYRA_Team_Project - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
