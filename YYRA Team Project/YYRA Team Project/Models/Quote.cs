@@ -26,5 +26,11 @@ namespace YYRA_Team_Project.Models
         [Display(Name = "Delivery Date")]
         public DateTime Q_Date { get; set; }
 
+        [Display(Name = "Suggested Price")]
+        public float Q_Price { get; set; }
+
+        [Display(Name = "Total amount due")]
+        public float Q_Total { get; set; }
+
     }
 }
