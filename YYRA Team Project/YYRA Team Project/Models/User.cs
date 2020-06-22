@@ -9,7 +9,7 @@ namespace YYRA_Team_Project.Models
         private const string username_error_mesage = "The Username must be longer than 8 characters, must have one letter and one number.";
         private const string password_error_message = "The Password must be longer than 8 characters, have one uppercase letter, one lowercase letter, one number, and one special character. Special characters include (@,$,!,%,*,?,&)";
         private const string email_error_message = "The email address must be a valid email address.";
-        private const string address1_error_message = "The addresses length must be between 1 and 100 characters.";
+        private const string address1_error_message = "The addresses length must be between 1 and 100 characters and no special characters.";
         private const string city_error_message = "The city length must equal to or less than 100 characters and all letters.";
         private const string zipcode_error_message = "The zipcode length must be between 5 and 9 characters and all numbers.";
         private const string name_error_message = "The name length must equal to or less than 50 characters and all letters.";
@@ -32,16 +32,12 @@ namespace YYRA_Team_Project.Models
         public string U_Pass { get; set; }
 
 
-        [Display(Name = "First name")]
+        [Display(Name = "Full name")]
         [Required]
-        [RegularExpression("^[a-zA-Z]*$", ErrorMessage = name_error_message)]
-        public string U_FName { get; set; }
-
-
-        [Display(Name = "Last name")]
-        [Required]
-        [RegularExpression("^[a-zA-Z]*$", ErrorMessage = name_error_message)]
-        public string U_LName { get; set; }
+        [MinLength(1, ErrorMessage = name_error_message)]
+        [MaxLength(50, ErrorMessage = name_error_message)]
+        [RegularExpression("^[a-zA-Z_ ]*$", ErrorMessage = name_error_message)]
+        public string U_FullName { get; set; }
 
         [Display(Name = "Address 1")]
         [Required]

@@ -15,14 +15,9 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <form method="post">
             <div class="form-group">
-                <label asp-for="@Model.USERS.U_FName" class="control-label"></label>
-                <input asp-for="@Model.USERS.U_FName" type="text" class="form-control" />
-                <span asp-validation-for="@Model.USERS.U_FName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="@Model.USERS.U_LName" class="control-label"></label>
-                <input asp-for="@Model.USERS.U_LName" type="text" class="form-control" />
-                <span asp-validation-for="@Model.USERS.U_LName" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_FullName" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_FullName" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_FullName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="@Model.USERS.U_Address1" class="control-label"></label>
