@@ -13,24 +13,18 @@ namespace YYRA_Team_Project.Pages.Users
     {
         [BindProperty]
         public User USERS { get; set; }
+        public string state { get; set; }
         public string pass { get; set; }
         public void OnGet()
         {
             if(USERS == null)
-            {
                 USERS = new User();
-            }
-            USERS.U_Pass = pass;
-            
         }
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
-            {
-                USERS.U_Pass = pass;
                 return Page();
-            }
-            return RedirectToPage("/Index");
+            return RedirectToPage("../Users/UserLogin");
         }
     }
 }

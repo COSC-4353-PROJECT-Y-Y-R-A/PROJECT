@@ -9,8 +9,12 @@ using Microsoft.Extensions.Logging;
 
 namespace YYRA_Team_Project
 {
+    
     public class Program
     {
+        /*
+        main method responsible for configuring a web host for the application and launching it so it's ready to serve requests
+         */
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();

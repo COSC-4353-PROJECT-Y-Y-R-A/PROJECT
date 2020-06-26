@@ -1,0 +1,60 @@
+﻿@page
+@model YYRA_Team_Project.Pages.QuoteHistory.IndexModel
+
+@{
+    ViewData["Title"] = "Fuel Quote History";
+}
+
+<h1>Fuel Quote History</h1>
+
+<p>
+    <a asp-page="Create">Create New Quote</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].Q_Gallons)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].Q_Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].Q_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].Q_Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].Q_Total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Quote) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q_Gallons)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q_Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q_Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q_Total)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
