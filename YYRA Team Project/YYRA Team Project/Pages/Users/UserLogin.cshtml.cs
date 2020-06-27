@@ -43,17 +43,17 @@ namespace YYRA_Team_Project
                         HttpContext.Session.SetString("Username", USERS[i].U_Username.ToString());
                         HttpContext.Session.SetString("Role", USERS[i].U_Role.ToString());
 
-                        ViewData["Username"] = HttpContext.Session.GetString("Username");
-                        ViewData["Role"] = HttpContext.Session.GetString("Role");
+                        ViewData["Username"] = HttpContext.Session.GetString("Username").ToString();
+                        ViewData["Role"] = HttpContext.Session.GetString("Role").ToString();
 
                         if (USERS[i].U_Role.ToString().Contains( "Admin"))
                         {
-                            string url = "../Users/UserTable?id=" + LOGIN_USER.U_Username.ToString();
+                            string url = "../Users/UserTable?id=" + LOGIN_USER.U_ID.ToString();
                             return Redirect(url);
                         }
                         else //client
                         {
-                            string url = "../Users/UserProfile?id=" + LOGIN_USER.U_Username.ToString();
+                            string url = "../Users/UserProfile?id=" + LOGIN_USER.U_ID.ToString();
                             return Redirect(url);
                         }
                     }
