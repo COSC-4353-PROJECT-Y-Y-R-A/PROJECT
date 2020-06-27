@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using YYRA_Team_Project.Models;
 using Microsoft.AspNetCore.Http;
+using System.Text;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -35,14 +36,14 @@ namespace YYRA_Team_Project.Pages.Users
             if (HttpContext.Session.Get("Username") != null)
             {
                 byte[] str = HttpContext.Session.Get("Username");
-                string Username = str.ToString();
+                string Username = Encoding.UTF8.GetString(str, 0, str.Length);
                 ViewData["Username"] = Username;
             }
 
             if (HttpContext.Session.Get("Role") != null)
             {
                 byte[] str = HttpContext.Session.Get("Role");
-                string Role = str.ToString();
+                string Role = Encoding.UTF8.GetString(str, 0, str.Length);
                 ViewData["Role"] = Role;
             }
 
