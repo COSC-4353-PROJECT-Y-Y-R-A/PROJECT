@@ -43,9 +43,6 @@ namespace YYRA_Team_Project
                         HttpContext.Session.SetString("Username", USERS[i].U_Username.ToString());
                         HttpContext.Session.SetString("Role", USERS[i].U_Role.ToString());
 
-                        ViewData["Username"] = HttpContext.Session.GetString("Username").ToString();
-                        ViewData["Role"] = HttpContext.Session.GetString("Role").ToString();
-
                         if (USERS[i].U_Role.ToString().Contains( "Admin"))
                         {
                             string url = "../Users/UserTable?id=" + LOGIN_USER.U_ID.ToString();
