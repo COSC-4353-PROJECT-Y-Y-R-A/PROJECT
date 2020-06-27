@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {}
+    "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+    "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
+        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
         "projectName": "YYRA Team Project",
-        "projectPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
-        "packagesPath": "C:\\Users\\Youngjoon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\obj\\",
+        "projectPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
+        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Youngjoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

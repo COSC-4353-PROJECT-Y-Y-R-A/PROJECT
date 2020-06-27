@@ -5,7 +5,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 style="color:red; font-family:'Century Gothic'">Welcome @Model.[Model.currentID].U_LName to Admin WebTool</h1>
+<h1 style="color:red; font-family:'Century Gothic'">Welcome @Model.Users[Model.currentID].U_Username to Admin WebTool</h1>
 
 <div class="clearfix">
     <a type="button" class="btn btn-secondary float-left" asp-page="Create" asp-route-id="@Model.currentID">Create New User</a>

@@ -77,6 +77,6 @@ namespace YYRA_Team_Project.Models
         public string U_Email { get; set; }
 
         [Display(Name = "Role")]
-        public string U_Role { get; set; } //admin or client
+        public string U_Role { get; set; } //Admin or Client
     }
 }
