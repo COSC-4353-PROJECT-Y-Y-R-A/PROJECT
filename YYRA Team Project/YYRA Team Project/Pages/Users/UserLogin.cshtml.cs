@@ -42,6 +42,9 @@ namespace YYRA_Team_Project
                     {
                         HttpContext.Session.SetString("Username", USERS[i].U_Username.ToString());
                         HttpContext.Session.SetString("Role", USERS[i].U_Role.ToString());
+                        HttpContext.Session.SetString("Id", USERS[i].U_ID.ToString());
+
+                        LOGIN_USER.U_ID = USERS[i].U_ID;
 
                         if (USERS[i].U_Role.ToString().Contains( "Admin"))
                         {

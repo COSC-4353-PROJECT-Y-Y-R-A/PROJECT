@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using YYRA_Team_Project.Models;
 using Microsoft.AspNetCore.Http;
 using System.Text;
+using Microsoft.AspNetCore.Hosting;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -14,12 +15,13 @@ namespace YYRA_Team_Project.Pages.Users
     {
         [BindProperty]
         public User USERS { get; set; }
-        //public void OnGet()
-        //{
-        //    if (USERS == null)
-        //        USERS = new User();
-        //}
-
+        private readonly MockUserList _mockUserList;
+        private IWebHostEnvironment _environment;
+        public UserProfileModel(IWebHostEnvironment environment)
+        {
+            _mockUserList = new MockUserList();
+            _environment = environment;
+        }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -27,8 +29,6 @@ namespace YYRA_Team_Project.Pages.Users
                 return NotFound();
             }
 
-            if (USERS == null) USERS = new User();
-
             if (HttpContext.Session.Get("Username") != null)
             {
                 byte[] str = HttpContext.Session.Get("Username");
@@ -42,11 +42,21 @@ namespace YYRA_Team_Project.Pages.Users
                 string Role = Encoding.UTF8.GetString(str, 0, str.Length);
                 ViewData["Role"] = Role;
             }
-
+            if (HttpContext.Session.Get("Id") != null)
+            {
+                byte[] str = HttpContext.Session.Get("Id");
+                string ID = Encoding.UTF8.GetString(str, 0, str.Length);
+                ViewData["Id"] = ID;
+            }
+            User supposedUser = _mockUserList.getUser(id);
+            if(supposedUser.U_Username.Equals(ViewData["Username"]))
+            {
+                USERS = supposedUser;
+            }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (HttpContext.Session.Get("Username") != null)
             {
@@ -61,10 +71,24 @@ namespace YYRA_Team_Project.Pages.Users
                 string Role = Encoding.UTF8.GetString(str, 0, str.Length);
                 ViewData["Role"] = Role;
             }
+            if (HttpContext.Session.Get("Id") != null)
+            {
+                byte[] str = HttpContext.Session.Get("Id");
+                string ID = Encoding.UTF8.GetString(str, 0, str.Length);
+                ViewData["Id"] = ID;
+            }
 
             if (!ModelState.IsValid)
                 return Page();
-            return RedirectToPage("/Index");
+
+            User supposedUser = _mockUserList.getUser(id);
+            if (supposedUser.U_Username.Equals(ViewData["Username"]))
+            {
+                USERS.U_ID = int.Parse(id.ToString());
+                _mockUserList.setUser(USERS);
+            }
+
+            return Redirect("/Users/FuelQuoteForm?id="+USERS.U_ID.ToString());
         }
     }
 }

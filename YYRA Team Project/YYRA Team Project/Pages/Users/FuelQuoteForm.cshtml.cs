@@ -46,6 +46,12 @@ namespace YYRA_Team_Project.Pages.Users
                 string Role = Encoding.UTF8.GetString(str, 0, str.Length);
                 ViewData["Role"] = Role;
             }
+            if (HttpContext.Session.Get("Id") != null)
+            {
+                byte[] str = HttpContext.Session.Get("Id");
+                string ID = Encoding.UTF8.GetString(str, 0, str.Length);
+                ViewData["Id"] = ID;
+            }
 
             return Page();
         }
