@@ -21,6 +21,7 @@ namespace YYRA_Team_Project.Pages.Users
 
         public IQuoteRepository QuoteRepository { get; }
 
+        
         public void OnGet()
         {
             Quotes = quoteRepository.GetAllQuotes();
