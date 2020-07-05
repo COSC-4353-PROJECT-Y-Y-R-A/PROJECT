@@ -17,8 +17,11 @@ namespace YYRA_Team_Project.Models
          * 
          */
 
-       
-        public int ID { get; set; }
+        //quote ID for DB-REMOVED FOR NOW
+        //public int ID { get; set; }
+
+        //user id for quote
+        public int UserID { get; set; }
 
         [Display(Name = "Gallons Requested")]
         public int Q_Gallons { get; set; }
@@ -27,7 +30,8 @@ namespace YYRA_Team_Project.Models
         public string Q_Address { get; set; }
 
         [Display(Name = "Delivery Date")]
-        public DateTime Q_Date { get; set; }
+        //public DateTime Q_Date { get; set; }
+        public string Q_Date { get; set; }
 
         [Display(Name = "Suggested Price")]
         public float Q_Price { get; set; }

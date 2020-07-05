@@ -77,5 +77,8 @@ namespace YYRA_Team_Project.Models
 
         [Display(Name = "Role")]
         public string U_Role { get; set; } //Admin or Client
+
+        //ROLE alternative - see Role.cs
+        public Role? userRole { get; set;}
     }
 }

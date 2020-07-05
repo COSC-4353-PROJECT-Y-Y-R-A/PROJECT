@@ -21,6 +21,7 @@
 
                         @if (ViewData["Username"] != null)
                         {
+
                             if (ViewData["Role"].ToString().Contains("Admin"))
                             {
                                 <li class="nav-item">
@@ -30,6 +31,7 @@
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Users/QuoteHistory/Index">Fuel Quote History</a>
                                 </li>
                             }
+
                             else
                             {
                                 <li class="nav-item">
@@ -38,6 +40,10 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Users/FuelQuoteForm" asp-route-id="@ViewData["Id"].ToString()">Fuel Quote Form</a>
+                                </li>
+                                //DELETE LATER
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Users/QuoteHistory/Index" asp-route-id="@ViewData["Id"].ToString()">Fuel Quote History</a>
                                 </li>
                             }
                         }
@@ -49,6 +55,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Users/Register">Register Page</a>
                             </li>
+
                         }
 
                     </ul>
