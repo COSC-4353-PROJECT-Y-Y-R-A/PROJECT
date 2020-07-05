@@ -22,7 +22,7 @@ namespace YYRA_Team_Project
             };
 
         }
-       
+      
         public IEnumerable<Quote> GetAllQuotes()
         {
             return _quoteList;
