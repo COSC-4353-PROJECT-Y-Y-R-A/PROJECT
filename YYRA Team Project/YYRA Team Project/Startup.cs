@@ -26,7 +26,8 @@ namespace YYRA_Team_Project
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-
+            services.AddMvc();
+            services.AddSession();
             services.AddDbContext<YYRA_Team_ProjectContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("YYRA_Team_ProjectContext")));
         }
@@ -44,7 +45,7 @@ namespace YYRA_Team_Project
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
