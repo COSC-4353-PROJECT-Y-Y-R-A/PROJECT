@@ -29,5 +29,7 @@ namespace YYRA_Team_Project
             return _quoteList;
         }
 
+        public Quote GetQuote(int id) => _quoteList.FirstOrDefault(e => e.UserID == id);
+
     }
 }

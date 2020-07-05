@@ -866,3 +866,4 @@ C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debu
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.genruntimeconfig.cache
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csprojAssemblyReference.cache
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistoryDisplay.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserQuotes.cshtml.g.cs

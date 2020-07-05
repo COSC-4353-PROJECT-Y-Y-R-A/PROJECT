@@ -9,5 +9,6 @@ namespace YYRA_Team_Project
     public interface IQuoteRepository
     {
         IEnumerable<Quote> GetAllQuotes();
+        Quote GetQuote(int id);
     }
 }
