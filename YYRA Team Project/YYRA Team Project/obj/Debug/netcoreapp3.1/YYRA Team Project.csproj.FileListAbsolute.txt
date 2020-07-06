@@ -305,8 +305,6 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Deb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfoInputs.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfo.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CoreCompileInputs.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.input.cache
@@ -860,3 +858,6 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Deb
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\nunit.framework.dll
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistoryDisplay.cshtml.g.cs
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserQuotes.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\nunit.framework.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CoreCompileInputs.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.MvcApplicationPartsAssemblyInfo.cache

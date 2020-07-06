@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {}
+    "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {
+    "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+        "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
         "projectName": "Project_Tests",
-        "projectPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
-        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
+        "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+        "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
-                "projectPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
+              "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+                "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
               }
             }
           }
@@ -61,6 +58,10 @@
               "target": "Package",
               "version": "[4.14.5, )"
             },
+            "OpenCover": {
+              "target": "Package",
+              "version": "[4.7.922, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[1.2.0, )"
@@ -84,24 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+    "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
+        "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
         "projectName": "YYRA Team Project",
-        "projectPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
-        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamer\\source\\repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\obj\\",
+        "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
+        "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,6 +144,10 @@
             "NUnit": {
               "target": "Package",
               "version": "[3.12.0, )"
+            },
+            "OpenCover": {
+              "target": "Package",
+              "version": "[4.7.922, )"
             }
           },
           "imports": [
@@ -166,7 +168,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

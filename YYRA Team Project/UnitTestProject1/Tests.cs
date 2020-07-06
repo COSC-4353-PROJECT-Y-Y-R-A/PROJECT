@@ -11,7 +11,15 @@ namespace Project_Tests
     [TestClass]
     public class Tests
     {
+        private readonly IQuoteRepository quoteRepository;
         [TestMethod]
+        public void QuoteHistoryDisplay_Onget_Test() 
+        {
+            var model = new QuoteHistoryDisplayModel(quoteRepository);
+
+            Assert.ThrowsException<InvalidOperationException>(() =>  model.OnGet());
+        }
+    [TestMethod]
         public void UserProfile_OnGet_Test()
         {
             

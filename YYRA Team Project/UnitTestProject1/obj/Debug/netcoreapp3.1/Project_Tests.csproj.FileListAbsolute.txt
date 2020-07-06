@@ -222,7 +222,6 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debu
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\YYRA Team Project.pdb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.AssemblyInfoInputs.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.AssemblyInfo.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.csproj.CoreCompileInputs.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.csproj.CopyComplete
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.pdb
@@ -457,3 +456,5 @@ C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.csproj.CopyComplete
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.dll
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\nunit.framework.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.csproj.CoreCompileInputs.cache
