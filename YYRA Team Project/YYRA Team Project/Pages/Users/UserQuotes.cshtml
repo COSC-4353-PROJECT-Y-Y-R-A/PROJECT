@@ -13,7 +13,9 @@
         <tbody class="bg-info align-content-center flex-row border">
             @foreach (var quote in Model.Quotes)
             {
-                if (quote.UserID==2) //NEED FIX 
+                if (quote.UserID == Int32.Parse(ViewData["Id"])
+) //NEED FIX 
+
                 {
                 <tr class="border-top">
                     <td scope="row">
