@@ -1,4 +1,4 @@
-﻿@page "/Users/UserQuotes/{id:int}"
+﻿@page "{id:int}"
 
 @model YYRA_Team_Project.Pages.Users.UserQuotesModel
 @{
@@ -13,7 +13,7 @@
         <tbody class="bg-info align-content-center flex-row border">
             @foreach (var quote in Model.Quotes)
             {
-                if ( quote.UserID == 1)
+                if ( quote.UserID == Model.CurrentID)
 
                 {
                 <tr class="border-top">

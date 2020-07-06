@@ -26,6 +26,7 @@ namespace YYRA_Team_Project.Pages.Users
         //all quotes
         public IQuoteRepository QuoteRepository { get; }
 
+        public int CurrentID { get; set; }
         
         // Model-binding automatically maps the query string id
         // value to the id parameter on this OnGet() method
@@ -33,6 +34,7 @@ namespace YYRA_Team_Project.Pages.Users
         {
             Quote = quoteRepository.GetQuote(id);
             Quotes = quoteRepository.GetAllQuotes();
+            CurrentID = id; 
         }
 
       
