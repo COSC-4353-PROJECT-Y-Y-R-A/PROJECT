@@ -837,8 +837,6 @@ C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debu
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfoInputs.cache
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfo.cs
-C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CoreCompileInputs.cache
-C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cache
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cs
 C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.input.cache
