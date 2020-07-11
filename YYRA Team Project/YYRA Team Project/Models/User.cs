@@ -1,5 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace YYRA_Team_Project.Models
 {
@@ -28,7 +31,7 @@ namespace YYRA_Team_Project.Models
         [Required]
         [MinLength(8, ErrorMessage = password_error_message)]
         [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
-            , ErrorMessage = password_error_message)]
+           , ErrorMessage = password_error_message)] 
         public string U_Pass { get; set; }
 
 
@@ -72,7 +75,7 @@ namespace YYRA_Team_Project.Models
 
         [Display(Name = "Email")]
         [RegularExpression("([a-zA-Z0-9])*@([a-zA-Z])*((\\.com)|(\\.net))"
-            , ErrorMessage =email_error_message)]
+            , ErrorMessage = email_error_message)]
         public string U_Email { get; set; }
 
         [Display(Name = "Role")]

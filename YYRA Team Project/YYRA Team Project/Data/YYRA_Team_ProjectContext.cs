@@ -13,7 +13,12 @@ namespace YYRA_Team_Project.Data
             : base(options)
         {
         }
-
-        public DbSet<YYRA_Team_Project.Models.Quote> Quote { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Quote> Quote { get; set; }           
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Quote>().ToTable("Quote");
+            modelBuilder.Entity<User>().ToTable("Users");
+        }
     }
 }

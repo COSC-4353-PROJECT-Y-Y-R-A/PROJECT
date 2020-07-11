@@ -1,19 +1,20 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using YYRA_Team_Project.Data;
 using YYRA_Team_Project.Models;
 
-namespace YYRA_Team_Project.Pages.Users
+namespace YYRA_Team_Project.Pages.NewRegister
 {
-    public class RegisterModel : PageModel
+    public class CreateModel : PageModel
     {
         private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
 
-        public RegisterModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public CreateModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
         {
             _context = context;
         }
@@ -24,8 +25,10 @@ namespace YYRA_Team_Project.Pages.Users
         }
 
         [BindProperty]
-        public User Users { get; set; }
-        
+        public User User { get; set; }
+
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -33,7 +36,7 @@ namespace YYRA_Team_Project.Pages.Users
                 return Page();
             }
 
-            _context.Users.Add(Users);
+            _context.Users.Add(User);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

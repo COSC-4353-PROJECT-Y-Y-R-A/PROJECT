@@ -2,31 +2,29 @@
 @model YYRA_Team_Project.Pages.Users.RegisterModel
 @{
 }
-<style>
-    .column-left {
-        float: left;
-        width: 50%;
-        margin-left: 25%;
-    }
-</style>
+<h1>Register</h1>
+
+<hr />
 <div class="row">
-    <div class="column-left">
-        <h3>Register</h3>
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="col-md-4">
         <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="@Model.USERS.U_Username" class="control-label"></label>
-                <input asp-for="@Model.USERS.U_Username" class="form-control" />
-                <span asp-validation-for="@Model.USERS.U_Username" class="text-danger"></span>
+                <label asp-for="Users.U_ID" class="control-label"></label>
+                <input asp-for="Users.U_ID" class="form-control" />
+                <span asp-validation-for="Users.U_ID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="@Model.USERS.U_Pass" class="control-label"></label>
-                <input asp-for="@Model.USERS.U_Pass" type="password" class="form-control" />
-                <span asp-validation-for="@Model.USERS.U_Pass" class="text-danger"></span>
-            </div>
-            <div class="form-group text-center">
-                <input type="submit" value="Create" class="btn btn-primary text-center" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

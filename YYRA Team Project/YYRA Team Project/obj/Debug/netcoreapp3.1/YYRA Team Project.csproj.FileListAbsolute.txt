@@ -695,3 +695,8 @@ C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistory\Index.cshtml.g.cs
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
 C:\Users\gamer\source\repos\COSC-4353-PROJECT-Y-Y-R-A\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserProfile.cshtml.g.cs
+C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Create.cshtml.g.cs
+C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Delete.cshtml.g.cs
+C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
+C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
+C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
