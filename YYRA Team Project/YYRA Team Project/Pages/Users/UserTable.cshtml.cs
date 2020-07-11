@@ -47,15 +47,17 @@ namespace YYRA_Team_Project
                 ViewData["Id"] = ID;
             }
 
-            Debug.WriteLine(ViewData["Role"]);
+            //Debug.WriteLine(ViewData["Role"]);
+            Users = mockUserList.GetAllUsers();
 
-            for (int i = 0; i < 0; i++)
-            {
-                if (Users[i].U_ID == id)
-                {
-                    currentID = Users[i].U_ID - 1;//-1 because ID start from 1, but list is start from 0
-                }
-            }
+            //for (int i = 0; i < 0; i++)
+            //{
+            //    if (Users[i].U_ID == id)
+            //    {
+            //        currentID = Users[i].U_ID - 1;//-1 because ID start from 1, but list is start from 0
+            //    }
+            //}
+
         }
     }
 }
