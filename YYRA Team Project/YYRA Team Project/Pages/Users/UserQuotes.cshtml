@@ -1,0 +1,51 @@
+﻿@page "{id:int}"
+
+@model YYRA_Team_Project.Pages.Users.UserQuotesModel
+@{
+    ViewData["Title"] = "UserQuotes";
+}
+
+<h1>User Quotes</h1>
+
+<body class="flex-wrap">
+    <table class="table table-hover">
+
+        <tbody class="bg-info align-content-center flex-row border">
+            @foreach (var quote in Model.Quotes)
+            {
+                if ( quote.UserID == Model.CurrentID)
+
+                {
+                <tr class="border-top">
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => quote.UserID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Gallons)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Total)
+                    </td>
+
+                </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+</body>
+
+
+
+
+
+
