@@ -17,16 +17,16 @@ namespace YYRA_Team_Project
         public IList<User> Users { get; set; }
         public int currentID;
 
-        private readonly MockUserList mockUserList;
+        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
 
-        public UserTableModel()
+        public UserTableModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
         {
-            mockUserList = new MockUserList();
+            _context = context;
         }
 
         public void OnGetAsync(int? id)
         {
-            Users = mockUserList.GetAllUsers();
+            Users = _context.getAllUsers();
             if (HttpContext.Session.Get("Username") != null)
             {
                 byte[] str = HttpContext.Session.Get("Username");
@@ -48,7 +48,7 @@ namespace YYRA_Team_Project
             }
 
             //Debug.WriteLine(ViewData["Role"]);
-            Users = mockUserList.GetAllUsers();
+            Users = _context.getAllUsers();
 
             //for (int i = 0; i < 0; i++)
             //{

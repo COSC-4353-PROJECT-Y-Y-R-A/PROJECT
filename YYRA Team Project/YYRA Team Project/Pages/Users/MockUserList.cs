@@ -65,11 +65,12 @@ namespace YYRA_Team_Project.Pages.Users
         public User getUser(int? id)
         {
             User temp = null;
-            for(int x = 0; x < _userList.Count(); x++)
+            List<User> users = GetAllUsers();
+            for(int x = 0; x < users.Count(); x++)
             {
-                if(_userList[x].U_ID.ToString() == id.ToString())
+                if(users[x].U_ID.ToString() == id.ToString())
                 {
-                    temp = _userList[x];
+                    temp = users[x];
                     return temp;
                 }
             }
@@ -87,12 +88,18 @@ namespace YYRA_Team_Project.Pages.Users
             }
         }
 
+        public void addNewUser(User user)
+        {
+
+        }
+
         public void printList()
         {
+            List<User> users = GetAllUsers();
             Console.SetOut(new DebugTextWriter());
-            for (int x = 0; x < _userList.Count(); x++)
+            for (int x = 0; x < users.Count(); x++)
             {
-                User u = _userList[x];
+                User u = users[x];
                 Console.WriteLine(u.U_ID + " " + u.U_Username + " " + u.U_Address1);
             }
         }
