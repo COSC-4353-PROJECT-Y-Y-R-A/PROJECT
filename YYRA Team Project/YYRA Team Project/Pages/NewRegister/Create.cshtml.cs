@@ -41,7 +41,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 String query = "INSERT INTO dbo.UserCredentials (U_Username, U_Pass, U_Role) VALUES (@U_Username, @U_Pass, @U_Role)";
-
+    
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@U_Username", User.U_Username);

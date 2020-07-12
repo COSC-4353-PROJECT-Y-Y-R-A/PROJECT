@@ -8,6 +8,8 @@ using YYRA_Team_Project.Models;
 using YYRA_Team_Project.Pages.Users;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -27,7 +29,7 @@ namespace YYRA_Team_Project.Pages.Users
         public void OnGetAsync(int? id)
         {
             LOGIN_USER = new User();
-            USERS = _context.getAllUsers();
+            //USERS = _context.getAllUsers();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)

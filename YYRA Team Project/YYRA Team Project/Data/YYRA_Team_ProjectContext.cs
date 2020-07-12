@@ -22,44 +22,45 @@ namespace YYRA_Team_Project.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
-     
+
         internal List<User> getAllUsers()
         {
-            List<User> users = new List<User>();
-
-            SqlConnection sqlConnection = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand("dbo.get_all_users", sqlConnection);
-
-            sqlConnection.Open();
-            using (SqlDataReader rdr = cmd.ExecuteReader())
+            List<User> users = new List<User>();        
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
-                while (rdr.Read())
+                SqlCommand cmd = new SqlCommand("dbo.get_all_users", sqlConnection);
+                sqlConnection.Open();
+                using (SqlDataReader rdr = cmd.ExecuteReader())
                 {
-                    User r = new User();
-                    r.U_ID = rdr.GetInt32(0);
-                    r.U_Username = rdr.GetString(1);
-                    r.U_Pass = rdr.GetString(2);
-                    r.U_Role = rdr.GetString(3);
-                    if (!rdr.IsDBNull(5))
+                    while (rdr.Read())
                     {
-                        r.U_FullName = rdr.GetString(5);
+                        User r = new User();
+                        r.U_ID = rdr.GetInt32(0);
+                        r.U_Username = rdr.GetString(1);
+                        r.U_Pass = rdr.GetString(2);
+                        r.U_Role = rdr.GetString(3);
+                        if (!rdr.IsDBNull(5))
+                        {
+                            r.U_FullName = rdr.GetString(5);
+                        }
+                        if (!rdr.IsDBNull(6))
+                        {
+                            r.U_City = rdr.GetString(6);
+                        }
+                        if (!rdr.IsDBNull(7))
+                        {
+                            r.U_State = rdr.GetString(7);
+                        }
+                        if (!rdr.IsDBNull(8))
+                        {
+                            r.U_Zipcode = rdr.GetString(8); ;
+                        }
+                        users.Add(r);
                     }
-                    if (!rdr.IsDBNull(6))
-                    {
-                        r.U_City = rdr.GetString(6);
-                    }
-                    if (!rdr.IsDBNull(7))
-                    {
-                        r.U_State = rdr.GetString(7);
-                    }
-                    if (!rdr.IsDBNull(8))
-                    {
-                        r.U_Zipcode = rdr.GetString(8); ;
-                    }
-                    users.Add(r);
                 }
+                sqlConnection.Close();
             }
-            sqlConnection.Close();
+            
             return users;
         }
 
