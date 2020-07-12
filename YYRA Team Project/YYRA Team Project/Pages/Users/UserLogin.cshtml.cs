@@ -8,6 +8,7 @@ using YYRA_Team_Project.Models;
 using YYRA_Team_Project.Pages.Users;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -16,12 +17,13 @@ namespace YYRA_Team_Project.Pages.Users
         [BindProperty]
         public User LOGIN_USER { get; set; }
         public List<User> USERS { get; set; }
-
         private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        private readonly IMemoryCache _cache;
 
-        public UserLoginModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public UserLoginModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public void OnGetAsync(int? id)
@@ -43,6 +45,13 @@ namespace YYRA_Team_Project.Pages.Users
                         HttpContext.Session.SetString("Username", USERS[i].U_Username.ToString());
                         HttpContext.Session.SetString("Role", USERS[i].U_Role.ToString());
                         HttpContext.Session.SetString("Id", USERS[i].U_ID.ToString());
+
+                        var cacheEntry = USERS[i].U_Username.ToString();
+                        _cache.Set<String>("Username", cacheEntry);
+                        cacheEntry = USERS[i].U_Role.ToString();
+                        _cache.Set<String>("Role", cacheEntry);
+                        cacheEntry = USERS[i].U_ID.ToString();
+                        _cache.Set<String>("Id", cacheEntry);
 
                         LOGIN_USER.U_ID = USERS[i].U_ID;
 

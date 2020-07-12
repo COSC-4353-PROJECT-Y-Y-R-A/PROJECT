@@ -19,6 +19,7 @@ namespace YYRA_Team_Project.Data
         {
         }
 
+        public DbSet<UserCred> UserCreds { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
@@ -37,8 +38,8 @@ namespace YYRA_Team_Project.Data
                 {
                     User r = new User();
                     r.U_ID = rdr.GetInt32(0);
-                    r.U_Username = rdr.GetString(1);
-                    r.U_Pass = rdr.GetString(2);
+                    //r.U_Username = rdr.GetString(1);
+                    //r.U_Pass = rdr.GetString(2);
                     r.U_Role = rdr.GetString(3);
                     if (!rdr.IsDBNull(5))
                     {

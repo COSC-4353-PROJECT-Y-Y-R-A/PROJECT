@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Caching.Memory;
 using YYRA_Team_Project.Models;
 
 namespace YYRA_Team_Project.Pages.Users
 {
     public class UserQuotesModel : PageModel
     {
+        private readonly IMemoryCache _cache;
         private readonly IQuoteRepository quoteRepository;
         public IEnumerable<Quote> Quotes { get; set; }
 
-        public UserQuotesModel(IQuoteRepository quoteRepository)
+        public UserQuotesModel(IQuoteRepository quoteRepository, IMemoryCache cache)
         {
             this.quoteRepository = quoteRepository;
+            _cache = cache;
         }
 
         //single quote

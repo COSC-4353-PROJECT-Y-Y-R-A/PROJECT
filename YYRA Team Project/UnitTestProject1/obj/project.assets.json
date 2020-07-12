@@ -2559,6 +2559,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "EntityFramework": "6.4.4",
+          "Microsoft.EntityFrameworkCore": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
@@ -8617,6 +8618,7 @@
     ".NETCoreApp,Version=v3.1": [
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
+      "Microsoft.EntityFrameworkCore >= 3.1.5",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "Moq >= 4.14.5",
       "OpenCover >= 4.7.922",
@@ -8625,19 +8627,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gamer\\.nuget\\packages\\": {}
+    "C:\\Users\\qs\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gamer\\Source\\Repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+      "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
       "projectName": "Project_Tests",
-      "projectPath": "C:\\Users\\gamer\\Source\\Repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
-      "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gamer\\Source\\Repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
+      "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+      "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8650,8 +8652,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\gamer\\Source\\Repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
-              "projectPath": "C:\\Users\\gamer\\Source\\Repos\\COSC-4353-PROJECT-Y-Y-R-A\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
+            "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+              "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
             }
           }
         }
@@ -8672,6 +8674,10 @@
           "MSTest.TestFramework": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.5, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -8708,7 +8714,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

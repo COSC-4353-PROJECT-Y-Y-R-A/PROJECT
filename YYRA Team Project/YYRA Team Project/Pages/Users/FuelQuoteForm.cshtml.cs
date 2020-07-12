@@ -7,11 +7,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using YYRA_Team_Project.Models;
 using Microsoft.AspNetCore.Http;
 using System.Text;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace YYRA_Team_Project.Pages.Users
 {
     public class FuelQuoteFormModel : PageModel
     {
+        private readonly IMemoryCache _cache;
+        public FuelQuoteFormModel(IMemoryCache cache)
+        {
+            _cache = cache;
+        }
         [BindProperty]
         public Quote QUOTE { get; set; }
         //public void OnGet()
@@ -32,28 +38,10 @@ namespace YYRA_Team_Project.Pages.Users
             {
                 QUOTE = new Quote();
             }
-            if(HttpContext != null)
-            {
-                if (HttpContext.Session.Get("Username") != null)
-                {
-                    byte[] str = HttpContext.Session.Get("Username");
-                    string Username = Encoding.UTF8.GetString(str, 0, str.Length);
-                    ViewData["Username"] = Username;
-                }
 
-                if (HttpContext.Session.Get("Role") != null)
-                {
-                    byte[] str = HttpContext.Session.Get("Role");
-                    string Role = Encoding.UTF8.GetString(str, 0, str.Length);
-                    ViewData["Role"] = Role;
-                }
-                if (HttpContext.Session.Get("Id") != null)
-                {
-                    byte[] str = HttpContext.Session.Get("Id");
-                    string ID = Encoding.UTF8.GetString(str, 0, str.Length);
-                    ViewData["Id"] = ID;
-                }
-            }
+            ViewData["Username"] = _cache.Get<String>("Username");
+            ViewData["Role"] = _cache.Get<String>("Role");
+            ViewData["Id"] = _cache.Get<String>("Id");
 
             return Page();
         }

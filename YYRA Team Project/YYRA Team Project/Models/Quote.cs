@@ -18,7 +18,8 @@ namespace YYRA_Team_Project.Models
          */
 
         //quote ID for DB-REMOVED FOR NOW
-        //public int ID { get; set; }
+        [Key]
+        public int ID { get; set; }
 
         //user id for quote
         public int UserID { get; set; }
