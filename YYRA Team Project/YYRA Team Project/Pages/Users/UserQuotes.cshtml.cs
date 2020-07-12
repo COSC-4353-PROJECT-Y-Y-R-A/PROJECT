@@ -41,6 +41,7 @@ namespace YYRA_Team_Project.Pages.Users
             Quote = quoteRepository.GetQuote(id);
             Quotes = quoteRepository.GetAllQuotes();
             CurrentID = id; 
+
         }
 
       
