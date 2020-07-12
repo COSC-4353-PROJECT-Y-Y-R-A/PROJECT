@@ -21,8 +21,6 @@ namespace YYRA_Team_Project.Pages.Users
         //        QUOTE = new Quote();
         //    }
         //}
-        [BindProperty(SupportsGet = true)]
-        public int PP { get; set; }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)

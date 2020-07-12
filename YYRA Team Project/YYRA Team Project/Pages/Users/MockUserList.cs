@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using YYRA_Team_Project.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace YYRA_Team_Project.Pages.Users
 {
     public class MockUserList
     {
         private List<User> _userList;
+        public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
 
         public MockUserList() {
             _userList = new List<User>()
@@ -22,17 +24,53 @@ namespace YYRA_Team_Project.Pages.Users
 
         public List<User> GetAllUsers()
         {
-            return _userList;
+            List<User> users = new List<User>();
+
+            SqlConnection sqlConnection = new SqlConnection(connection);
+            SqlCommand cmd = new SqlCommand("dbo.get_all_users", sqlConnection);
+
+            sqlConnection.Open();
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    User r = new User();
+                    r.U_ID = rdr.GetInt32(0);
+                    r.U_Username = rdr.GetString(1);
+                    r.U_Pass = rdr.GetString(2);
+                    r.U_Role = rdr.GetString(3);
+                    if(!rdr.IsDBNull(5))
+                    {
+                        r.U_FullName = rdr.GetString(5);
+                    }
+                    if (!rdr.IsDBNull(6))
+                    {
+                        r.U_City = rdr.GetString(6);
+                    }
+                    if (!rdr.IsDBNull(7))
+                    {
+                        r.U_State = rdr.GetString(7);
+                    }
+                    if (!rdr.IsDBNull(8))
+                    {
+                        r.U_Zipcode = rdr.GetString(8); ;
+                    }
+                    users.Add(r);
+                }
+            }
+            sqlConnection.Close();
+            return users;
         }
 
         public User getUser(int? id)
         {
             User temp = null;
-            for(int x = 0; x < _userList.Count(); x++)
+            List<User> users = GetAllUsers();
+            for(int x = 0; x < users.Count(); x++)
             {
-                if(_userList[x].U_ID.ToString() == id.ToString())
+                if(users[x].U_ID.ToString() == id.ToString())
                 {
-                    temp = _userList[x];
+                    temp = users[x];
                     return temp;
                 }
             }
@@ -50,12 +88,18 @@ namespace YYRA_Team_Project.Pages.Users
             }
         }
 
+        public void addNewUser(User user)
+        {
+
+        }
+
         public void printList()
         {
+            List<User> users = GetAllUsers();
             Console.SetOut(new DebugTextWriter());
-            for (int x = 0; x < _userList.Count(); x++)
+            for (int x = 0; x < users.Count(); x++)
             {
-                User u = _userList[x];
+                User u = users[x];
                 Console.WriteLine(u.U_ID + " " + u.U_Username + " " + u.U_Address1);
             }
         }
