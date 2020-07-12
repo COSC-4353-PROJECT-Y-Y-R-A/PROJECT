@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int?}"
 @model YYRA_Team_Project.Pages.NewRegister.IndexModel
 
 @{
@@ -47,44 +47,45 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.User) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Pass)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_FullName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Address1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Address2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_State)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Zipcode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.U_Role)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.U_ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.U_ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.U_ID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.User)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Pass)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Address1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Address2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Zipcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.U_Role)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.U_ID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.U_ID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.U_ID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

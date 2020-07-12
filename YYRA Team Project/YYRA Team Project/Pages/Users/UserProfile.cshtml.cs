@@ -13,13 +13,15 @@ namespace YYRA_Team_Project.Pages.Users
 {
     public class UserProfileModel : PageModel
     {
+        
         [BindProperty]
         public User USERS { get; set; }
         private readonly MockUserList _mockUserList;
         private IWebHostEnvironment _environment;
-        public UserProfileModel()
+        public UserProfileModel(IWebHostEnvironment environment)
         {
             _mockUserList = new MockUserList();
+            _environment = environment;
         }
         public async Task<IActionResult> OnGetAsync(int? id)
         {

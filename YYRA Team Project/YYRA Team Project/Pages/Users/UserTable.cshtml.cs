@@ -17,16 +17,16 @@ namespace YYRA_Team_Project
         public IList<User> Users { get; set; }
         public int currentID;
 
-        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        private readonly MockUserList mockUserList;
 
-        public UserTableModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public UserTableModel()
         {
-            _context = context;
+            mockUserList = new MockUserList();
         }
 
         public void OnGetAsync(int? id)
         {
-            Users = _context.getAllUsers();
+            Users = mockUserList.GetAllUsers();
             if (HttpContext.Session.Get("Username") != null)
             {
                 byte[] str = HttpContext.Session.Get("Username");
@@ -47,17 +47,15 @@ namespace YYRA_Team_Project
                 ViewData["Id"] = ID;
             }
 
-            //Debug.WriteLine(ViewData["Role"]);
-            Users = _context.getAllUsers();
+            Debug.WriteLine(ViewData["Role"]);
 
-            //for (int i = 0; i < 0; i++)
-            //{
-            //    if (Users[i].U_ID == id)
-            //    {
-            //        currentID = Users[i].U_ID - 1;//-1 because ID start from 1, but list is start from 0
-            //    }
-            //}
-
+            for (int i = 0; i < 0; i++)
+            {
+                if (Users[i].U_ID == id)
+                {
+                    currentID = Users[i].U_ID - 1;//-1 because ID start from 1, but list is start from 0
+                }
+            }
         }
     }
 }
