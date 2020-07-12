@@ -695,3 +695,9 @@ C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\UnitTestProject1
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.dll
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.pdb
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\UnitTestProject1\obj\Debug\netcoreapp3.1\Project_Tests.genruntimeconfig.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\UnitTestProject1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

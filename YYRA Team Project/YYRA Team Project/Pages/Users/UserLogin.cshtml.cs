@@ -9,7 +9,7 @@ using YYRA_Team_Project.Pages.Users;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
 
-namespace YYRA_Team_Project
+namespace YYRA_Team_Project.Pages.Users
 {
     public class UserLoginModel : PageModel
     {
