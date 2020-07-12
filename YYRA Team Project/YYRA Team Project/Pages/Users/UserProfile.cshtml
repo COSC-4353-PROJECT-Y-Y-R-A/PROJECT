@@ -1,6 +1,9 @@
 ﻿@page
 @model YYRA_Team_Project.Pages.Users.UserProfileModel
 @{
+    ViewData["Username"] = Model._context.getUsername(Model._cache);
+    ViewData["Role"] = Model._context.getRole(Model._cache);
+    ViewData["Id"] = Model._context.getId(Model._cache);
 }
 <style>
     .column-left {
@@ -12,7 +15,7 @@
 
 <div class="row">
     <div class="column-left">
-        <h3>@ViewData["Username"] 's profile</h3>
+        <h3>@{Model.getUsername(); }  's profile</h3>
         <form method="post">
             <div class="form-group" hidden>
                 <label asp-for="USERS.U_Username" class="control-label"></label>

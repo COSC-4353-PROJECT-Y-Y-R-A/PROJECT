@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using YYRA_Team_Project.Models;
 
 namespace YYRA_Team_Project.Data
@@ -15,14 +16,22 @@ namespace YYRA_Team_Project.Data
         {
         }
 
-        public YYRA_Team_ProjectContext()
-        {
-        }
-
         public DbSet<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
 
+        public string getUsername(IMemoryCache cache)
+        {
+            return cache.Get<String>("Username");
+        }
+        public string getRole(IMemoryCache cache)
+        {
+            return cache.Get<String>("Role");
+        }
+        public string getId(IMemoryCache cache)
+        {
+            return cache.Get<String>("Id");
+        }
         internal List<User> getAllUsers()
         {
             List<User> users = new List<User>();        

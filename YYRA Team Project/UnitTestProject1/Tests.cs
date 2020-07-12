@@ -17,43 +17,24 @@ using NUnit.Framework.Internal;
 
 namespace Project_Tests
 {
-    public class Test
-    {
-        private readonly IMemoryCache _memoryCache;
-        public Test(IMemoryCache memoryCache)
-        {
-            _memoryCache = memoryCache;
-        }
-        public void SetCache(string key, string value)
-        {
-            _memoryCache.Set(key, value, new MemoryCacheEntryOptions { SlidingExpiration = TimeSpan.FromHours(1) });
-        }
-    }
-        [TestClass]
+    [TestClass]
     public class Tests
     {
         private readonly IQuoteRepository quoteRepository;
 
-
-        public Test GetSystemUnderTest()
-        {
+        [TestMethod]
+        public void QuoteHistoryDisplay_Onget_Test(){
+            var mockContext = new Mock<YYRA_Team_ProjectContext>();
             var services = new ServiceCollection();
             services.AddMemoryCache();
             var serviceProvider = services.BuildServiceProvider();
 
             var memoryCache = serviceProvider.GetService<IMemoryCache>();
-            return new Test(memoryCache);
-        }
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
 
-        [TestMethod]
-        public void QuoteHistoryDisplay_Onget_Test(){
-            var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new QuoteHistoryDisplayModel(quoteRepository);
-
-            var sut = GetSystemUnderTest();
-
-            //Act
-            sut.SetCache("key", "value");
+            var model = new QuoteHistoryDisplayModel(quoteRepository, mockContext.Object, memoryCache);
 
             try
             {
@@ -66,10 +47,17 @@ namespace Project_Tests
         [TestMethod]
         public async Task UserProfile_OnGet_Test(){
             int id = 2;
-            //var test = new Mock<HttpContext>();
-           //test.Setup(p => p.HttpContext.Session["test"]).Returns("Hello World");
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserProfileModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserProfileModel(mockContext.Object, memoryCache);
             
            
 
@@ -87,7 +75,16 @@ namespace Project_Tests
         public void UserProfile_OnPost_Test(){
             int id = 2;
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserProfileModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserProfileModel(mockContext.Object,memoryCache);
 
             try{
                 model.OnPostAsync(id);
@@ -100,7 +97,16 @@ namespace Project_Tests
         public void UserLogin_OnGet_Test(){ //tests if the onget functionality
             int id = 2;
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserLoginModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserLoginModel(mockContext.Object,memoryCache);
 
             try{
                 model.OnGetAsync(id);
@@ -113,7 +119,16 @@ namespace Project_Tests
         public async Task UserLogin_OnPost_Admin_TestAsync(){ //tests if user of admin status makes it through on post
             int id = 1;
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserLoginModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserLoginModel(mockContext.Object, memoryCache);
 
             try{
                 await model.OnPostAsync(id);
@@ -127,7 +142,16 @@ namespace Project_Tests
             int id = 2;
 
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserLoginModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserLoginModel(mockContext.Object,memoryCache);
 
             try{
                 model.OnPostAsync(id);
@@ -139,7 +163,16 @@ namespace Project_Tests
         public void UserQuotes_OnGet_Test(){
             int id = 2;
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserQuotesModel(quoteRepository);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserQuotesModel(quoteRepository,mockContext.Object, memoryCache);
 
             try{
                 model.OnGet(id);
@@ -152,7 +185,16 @@ namespace Project_Tests
         public void UserTable_OnGet_Test(){
             int id = 2;
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new UserTableModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new UserTableModel(mockContext.Object,memoryCache);
 
             try{
                 model.OnGetAsync(id);
@@ -164,7 +206,16 @@ namespace Project_Tests
         [TestMethod]
         public void Register_OnPost_Test(){
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new RegisterModel(mockContext.Object);
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new RegisterModel(mockContext.Object,memoryCache);
 
             try{
                 model.OnPostAsync();
@@ -177,7 +228,16 @@ namespace Project_Tests
         public void FuelQuoteForm_OnGet_Test(){
             int id = 2;
             var mockContext = new Mock<YYRA_Team_ProjectContext>();
-            var model = new FuelQuoteFormModel();
+            var services = new ServiceCollection();
+            services.AddMemoryCache();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var memoryCache = serviceProvider.GetService<IMemoryCache>();
+            memoryCache.Set<String>("Username", "");
+            memoryCache.Set<String>("Role", "");
+            memoryCache.Set<String>("Id", "");
+
+            var model = new FuelQuoteFormModel(mockContext.Object, memoryCache);
 
             try{
                 model.OnGetAsync(id);

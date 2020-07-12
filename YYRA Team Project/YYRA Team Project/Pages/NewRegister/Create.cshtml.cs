@@ -15,9 +15,9 @@ namespace YYRA_Team_Project.Pages.NewRegister
 {
     public class CreateModel : PageModel
     {
-        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        private readonly YYRA_Team_ProjectContext _context;
 
-        public CreateModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public CreateModel(YYRA_Team_ProjectContext context)
         {
             _context = context;
         }

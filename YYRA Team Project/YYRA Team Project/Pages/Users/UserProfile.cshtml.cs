@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Hosting;
 using YYRA_Team_Project.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Data.SqlClient;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -18,11 +19,16 @@ namespace YYRA_Team_Project.Pages.Users
     {
         [BindProperty]
         public User USERS { get; set; }
-        private IWebHostEnvironment _environment;
-        private YYRA_Team_ProjectContext _context;
-        public UserProfileModel(YYRA_Team_ProjectContext context)
+        public YYRA_Team_ProjectContext _context;
+        public readonly IMemoryCache _cache;
+        public UserProfileModel(YYRA_Team_ProjectContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
+        }
+        public string getUsername()
+        {
+            return _cache.Get<String>("Username");
         }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,27 +36,6 @@ namespace YYRA_Team_Project.Pages.Users
             {
                 return NotFound();
             }
-
-            if (HttpContext.Session.Get("Username") != null)
-            {
-                byte[] str = HttpContext.Session.Get("Username");
-                string Username = Encoding.UTF8.GetString(str, 0, str.Length);
-                ViewData["Username"] = Username;
-            }
-
-            if (HttpContext.Session.Get("Role") != null)
-            {
-                byte[] str = HttpContext.Session.Get("Role");
-                string Role = Encoding.UTF8.GetString(str, 0, str.Length);
-                ViewData["Role"] = Role;
-            }
-            if (HttpContext.Session.Get("Id") != null)
-            {
-                byte[] str = HttpContext.Session.Get("Id");
-                string ID = Encoding.UTF8.GetString(str, 0, str.Length);
-                ViewData["Id"] = ID;
-            }
-
            // USERS = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
 
             return Page();

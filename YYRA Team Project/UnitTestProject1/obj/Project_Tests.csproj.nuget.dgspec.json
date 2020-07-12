@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {}
+    "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {
+    "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+        "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
         "projectName": "Project_Tests",
-        "projectPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
-        "packagesPath": "C:\\Users\\Youngjoon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
+        "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+        "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Youngjoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
-                "projectPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
+              "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+                "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
               }
             }
           }
@@ -89,17 +89,17 @@
         }
       }
     },
-    "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+    "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
+        "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
         "projectName": "YYRA Team Project",
-        "projectPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
-        "packagesPath": "C:\\Users\\Youngjoon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\obj\\",
+        "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj",
+        "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Youngjoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

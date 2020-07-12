@@ -5,17 +5,20 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Caching.Memory;
 using YYRA_Team_Project.Models;
 
 namespace YYRA_Team_Project.Pages.Users
 {
     public class RegisterModel : PageModel
     {
-        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        public readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        public readonly IMemoryCache _cache;
 
-        public RegisterModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public RegisterModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public IActionResult OnGet()
