@@ -18,6 +18,9 @@
                     @Html.DisplayNameFor(model => model.Users[0].U_ID)
                 </th>
                 <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Users[0].U_Username)
+                </th>
+                <th scope="col" style="color:white">
                     @Html.DisplayNameFor(model => model.Users[0].U_Pass)
                 </th>
                 <th scope="col" style="color:white">
@@ -53,6 +56,9 @@
                 <td scope="row">
                     @Html.DisplayFor(modelItem => item.U_ID)
                 </td>
+                <td scope="row">
+                    @Html.DisplayFor(modelItem => item.U_Username)
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.U_Pass)
                 </td>
@@ -78,10 +84,10 @@
                     @Html.DisplayFor(modelItem => item.U_Role)
                 </td>
                 @*<td class="d-flex flex-row bd-highlight mb-3">
-                    <a class="p-2 bd-highlight" asp-page="./Edit" asp-route-id="@item.U_ID">Edit   </a>
-                    <a class="p-2 bd-highlight" asp-page="./Details" asp-route-id="@item.U_ID">Details</a>
-                    <a class="p-2 bd-highlight" asp-page="./Delete" asp-route-id="@item.U_ID">Delete </a>
-                </td>*@
+            <a class="p-2 bd-highlight" asp-page="./Edit" asp-route-id="@item.U_ID">Edit   </a>
+            <a class="p-2 bd-highlight" asp-page="./Details" asp-route-id="@item.U_ID">Details</a>
+            <a class="p-2 bd-highlight" asp-page="./Delete" asp-route-id="@item.U_ID">Delete </a>
+        </td>*@
             </tr>
                 }
 

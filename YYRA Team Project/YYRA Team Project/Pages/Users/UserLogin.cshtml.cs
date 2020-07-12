@@ -17,22 +17,22 @@ namespace YYRA_Team_Project
         public User LOGIN_USER { get; set; }
         public List<User> USERS { get; set; }
 
-        private readonly MockUserList mockUserList;
+        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
 
-        public UserLoginModel()
+        public UserLoginModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
         {
-            mockUserList = new MockUserList();
+            _context = context;
         }
 
         public void OnGetAsync(int? id)
         {
             LOGIN_USER = new User();
-            USERS = mockUserList.GetAllUsers();
+            USERS = _context.getAllUsers();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            USERS = mockUserList.GetAllUsers();
+            USERS = _context.getAllUsers();
             for (int i = 0; i < USERS.Count(); i++)
             {
                 if (USERS[i].U_Username.Contains(LOGIN_USER.U_Username))
@@ -46,6 +46,7 @@ namespace YYRA_Team_Project
 
                         LOGIN_USER.U_ID = USERS[i].U_ID;
 
+                        
                         if (USERS[i].U_Role.ToString().Contains( "Admin"))
                         {
                             string url = "../Users/UserTable?id=" + LOGIN_USER.U_ID.ToString();
