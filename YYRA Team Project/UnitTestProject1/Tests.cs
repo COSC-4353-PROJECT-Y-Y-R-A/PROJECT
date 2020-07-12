@@ -39,7 +39,11 @@ namespace Project_Tests
             memoryCache.Set<String>("Role", "");
             memoryCache.Set<String>("Id", "");
 
-            var model = new QuoteHistoryDisplayModel(quoteRepository,mockContext.Object, memoryCache);
+
+            //commented out memoryCache
+            //var model = new QuoteHistoryDisplayModel(quoteRepository,mockContext.Object, memoryCache); 
+
+            var model = new QuoteHistoryDisplayModel(quoteRepository, mockContext.Object);
 
             try
             {
