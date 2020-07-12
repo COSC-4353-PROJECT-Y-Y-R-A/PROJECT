@@ -31,6 +31,10 @@ namespace YYRA_Team_Project.Pages.NewRegister
         public User User { get; set; }
 
         public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
+        public void DoSQL(String query)
+        {
+
+        }
         public async Task<IActionResult> OnPostAsync()
         {
             
@@ -57,7 +61,6 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 }
                 connection.Close();
             }
-
             return RedirectToPage("/Index");
         }
     }

@@ -9,8 +9,8 @@ namespace YYRA_Team_Project.Models
     public class User
     {
         // User for regex expressions - https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
-        private const string username_error_mesage = "The Username must be longer than 8 characters, must have one letter and one number.";
-        private const string password_error_message = "The Password must be longer than 8 characters, have one uppercase letter, one lowercase letter, one number, and one special character. Special characters include (@,$,!,%,*,?,&)";
+        private const string username_error_mesage = "The Username must be between 8-16 characters, must have one letter and one number.";
+        private const string password_error_message = "The Password must be between 8-16 characters, have one uppercase letter, one lowercase letter, one number, and one special character. Special characters include (@,$,!,%,*,?,&)";
         private const string email_error_message = "The email address must be a valid email address.";
         private const string address1_error_message = "The addresses length must be between 1 and 100 characters and no special characters.";
         private const string city_error_message = "The city length must equal to or less than 100 characters and all letters.";
@@ -23,6 +23,7 @@ namespace YYRA_Team_Project.Models
         [Display(Name = "Username")]
         [Required]
         [MinLength(8, ErrorMessage = username_error_mesage)]
+        [MaxLength(16, ErrorMessage = name_error_message)]
         [RegularExpression("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
             , ErrorMessage = username_error_mesage)]
         public string U_Username { get; set; }
@@ -30,6 +31,7 @@ namespace YYRA_Team_Project.Models
         [Display(Name = "Password")]
         [Required]
         [MinLength(8, ErrorMessage = password_error_message)]
+        [MaxLength(16, ErrorMessage = name_error_message)]
         [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
            , ErrorMessage = password_error_message)] 
         public string U_Pass { get; set; }

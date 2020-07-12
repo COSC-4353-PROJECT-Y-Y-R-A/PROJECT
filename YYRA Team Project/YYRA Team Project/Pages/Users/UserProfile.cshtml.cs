@@ -10,6 +10,7 @@ using System.Text;
 using Microsoft.AspNetCore.Hosting;
 using YYRA_Team_Project.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Data.SqlClient;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -54,9 +55,29 @@ namespace YYRA_Team_Project.Pages.Users
 
             return Page();
         }
-
+        public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
         public async Task<IActionResult> OnPostAsync(int? id)
         {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                String query = "INSERT INTO dbo.UserCredentials (U_Username, U_Pass, U_Role) VALUES (@U_Username, @U_Pass, @U_Role)";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    
+
+                    connection.Open();
+                    int result = command.ExecuteNonQuery();
+
+                    // Check Error
+                    if (result < 0)
+                        Console.WriteLine("Error inserting data into Database!");
+                }
+                connection.Close();
+            }
+
+
+            /*
             if (HttpContext.Session.Get("Username") != null)
             {
                 byte[] str = HttpContext.Session.Get("Username");
@@ -87,7 +108,7 @@ namespace YYRA_Team_Project.Pages.Users
             }
             catch (DbUpdateConcurrencyException)
             {
-            }
+            }*/
 
             return Redirect("/Users/FuelQuoteForm?id="+USERS.U_ID.ToString());
         }
