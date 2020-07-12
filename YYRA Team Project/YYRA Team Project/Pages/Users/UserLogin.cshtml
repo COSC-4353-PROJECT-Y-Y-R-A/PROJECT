@@ -5,12 +5,10 @@
 
 }
 
-
-<div class="card-deck">
-    <div class="card-header" style="color:red;Background:white;border-style:inherit;animation:ease-in-out">
-        <h1>Login</h1>
-    </div>
-    <div class="w-25">
+<h1>Login</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
         <form method="post">
             <div class="form-group">
                 <label asp-for="@Model.LOGIN_USER.U_Username" class="control-label"></label>
@@ -24,7 +22,7 @@
                 <input type="submit" value="Login" class="btn btn-primary" />
             </div>
             <div class="card-link">
-                <a asp-page="/Users/Register">Register</a>
+                <a asp-page="/NewRegister/Create">Register</a>
             </div>
         </form>
     </div>

@@ -28,6 +28,7 @@ namespace YYRA_Team_Project
             services.AddRazorPages();
             services.AddMvc();
             services.AddSession();
+            services.AddMemoryCache();
             services.AddDbContext<YYRA_Team_ProjectContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("YYRA_Team_ProjectContext")));
 

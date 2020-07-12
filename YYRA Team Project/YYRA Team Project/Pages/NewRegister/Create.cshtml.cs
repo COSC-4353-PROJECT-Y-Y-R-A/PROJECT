@@ -15,9 +15,9 @@ namespace YYRA_Team_Project.Pages.NewRegister
 {
     public class CreateModel : PageModel
     {
-        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        private readonly YYRA_Team_ProjectContext _context;
 
-        public CreateModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public CreateModel(YYRA_Team_ProjectContext context)
         {
             _context = context;
         }
@@ -31,6 +31,10 @@ namespace YYRA_Team_Project.Pages.NewRegister
         public User User { get; set; }
 
         public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
+        public void DoSQL(String query)
+        {
+
+        }
         public async Task<IActionResult> OnPostAsync()
         {
             
@@ -41,7 +45,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 String query = "INSERT INTO dbo.UserCredentials (U_Username, U_Pass, U_Role) VALUES (@U_Username, @U_Pass, @U_Role)";
-
+    
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@U_Username", User.U_Username);
@@ -57,8 +61,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 }
                 connection.Close();
             }
-
-            return RedirectToPage("./Index");
+            return RedirectToPage("/Index");
         }
     }
 }
