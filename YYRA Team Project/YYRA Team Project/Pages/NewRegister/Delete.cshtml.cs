@@ -29,7 +29,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 return NotFound();
             }
 
-            User = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
+           // User = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
 
             if (User == null)
             {
@@ -45,7 +45,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 return NotFound();
             }
 
-            User = await _context.Users.FindAsync(id);
+            //User = _context.Users.FindAsync(id);
 
             if (User != null)
             {

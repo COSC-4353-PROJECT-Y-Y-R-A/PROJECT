@@ -23,7 +23,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
 
         public async Task OnGetAsync()
         {
-            User = await _context.Users.ToListAsync();
+            User =_context.getAllUsers();
         }
     }
 }

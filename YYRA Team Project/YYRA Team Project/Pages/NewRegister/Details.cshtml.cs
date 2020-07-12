@@ -28,7 +28,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 return NotFound();
             }
 
-            User = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
+            //User = _context.getAllUsers();
 
             if (User == null)
             {

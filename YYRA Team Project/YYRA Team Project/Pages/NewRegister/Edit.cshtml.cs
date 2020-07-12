@@ -30,7 +30,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 return NotFound();
             }
 
-            User = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
+            //User = _context.getAllUsers();
 
             if (User == null)
             {
@@ -56,14 +56,14 @@ namespace YYRA_Team_Project.Pages.NewRegister
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UserExists(User.U_ID))
+               /* if (!UserExists(User.U_ID))
                 {
                     return NotFound();
                 }
                 else
                 {
                     throw;
-                }
+                }*/
             }
 
             return RedirectToPage("./Index");
