@@ -72,6 +72,25 @@ namespace YYRA_Team_Project.Data
             }
             return temp;
         }
+
+        public void changeClientInformation(User user)
+        {
+            SqlConnection sqlConnection = new SqlConnection(connection);
+            SqlCommand cmd = new SqlCommand("dbo.change_client_information", sqlConnection);
+
+            sqlConnection.Open();
+            //uid, pname uaddress1, uaddress2, ucity, ustate, uzipcode
+            cmd.Parameters.AddWithValue("@uid", user.U_ID);
+            cmd.Parameters.AddWithValue("@pname", user.U_FullName);
+            cmd.Parameters.AddWithValue("@uaddress1", user.U_Address1);
+            cmd.Parameters.AddWithValue("@uaddress2", user.U_Address2);
+            cmd.Parameters.AddWithValue("@ucity", user.U_City);
+            cmd.Parameters.AddWithValue("@ustate", user.U_State);
+            cmd.Parameters.AddWithValue("@uzipcode", user.U_Zipcode);
+
+            sqlConnection.Close();
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Quote>().ToTable("Quote");
