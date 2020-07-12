@@ -17,7 +17,7 @@ namespace YYRA_Team_Project.Data
         public List<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
-
+     
         internal List<User> getAllUsers()
         {
             List<User> users = new List<User>();
