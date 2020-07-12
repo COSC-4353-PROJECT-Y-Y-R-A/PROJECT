@@ -8625,20 +8625,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Youngjoon\\.nuget\\packages\\": {}
+    "C:\\Users\\School\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+      "projectUniqueName": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
       "projectName": "Project_Tests",
-      "projectPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
-      "packagesPath": "C:\\Users\\Youngjoon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
+      "projectPath": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+      "packagesPath": "C:\\Users\\School\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Youngjoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\School\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8650,8 +8655,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
-              "projectPath": "C:\\Users\\Youngjoon\\Documents\\projects\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
+            "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+              "projectPath": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
             }
           }
         }

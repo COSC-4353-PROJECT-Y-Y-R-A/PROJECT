@@ -897,3 +897,17 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Deb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CoreCompileInputs.cache
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Create.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Delete.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\nunit.framework.dll
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\School\Desktop\web\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
