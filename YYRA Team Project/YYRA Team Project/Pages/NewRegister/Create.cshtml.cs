@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using YYRA_Team_Project.Data;
 using YYRA_Team_Project.Models;
+using System.Data;
+using System.Data.SqlClient;
+using Microsoft.AspNetCore.Connections.Features;
 
 namespace YYRA_Team_Project.Pages.NewRegister
 {
@@ -27,17 +30,33 @@ namespace YYRA_Team_Project.Pages.NewRegister
         [BindProperty]
         public User User { get; set; }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://aka.ms/RazorPagesCRUD.
+        public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
         public async Task<IActionResult> OnPostAsync()
         {
+            
             if (!ModelState.IsValid)
             {
                 return Page();
             }
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                String query = "INSERT INTO dbo.UserCredentials (U_Username, U_Pass, U_Role) VALUES (@U_Username, @U_Pass, @U_Role)";
+    
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@U_Username", User.U_Username);
+                    command.Parameters.AddWithValue("@U_Pass", User.U_Pass);
+                    command.Parameters.AddWithValue("@U_Role", User.U_Role);
 
-            _context.Users.Add(User);
-            await _context.SaveChangesAsync();
+                    connection.Open();
+                    int result = command.ExecuteNonQuery();
+
+                    // Check Error
+                    if (result < 0)
+                        Console.WriteLine("Error inserting data into Database!");
+                }
+                connection.Close();
+            }
 
             return RedirectToPage("./Index");
         }

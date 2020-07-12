@@ -32,11 +32,10 @@ namespace YYRA_Team_Project.Pages.Users
             {
                 return NotFound();
             }
-            TempData["fafs"] = "";
+
             ViewData["Username"] = _cache.Get<String>("Username");
             ViewData["Role"] = _cache.Get<String>("Role");
             ViewData["Id"] = _cache.Get<String>("Id");
-            
 
             user = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
 
