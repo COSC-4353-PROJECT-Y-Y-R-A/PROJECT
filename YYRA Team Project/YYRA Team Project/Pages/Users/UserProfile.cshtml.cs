@@ -26,10 +26,6 @@ namespace YYRA_Team_Project.Pages.Users
             _context = context;
             _cache = cache;
         }
-        public string getUsername()
-        {
-            return _cache.Get<String>("Username");
-        }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)

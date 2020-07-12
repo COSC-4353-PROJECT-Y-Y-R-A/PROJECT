@@ -33,8 +33,7 @@ namespace YYRA_Team_Project.Pages.Users
             Users = _context.getAllUsers();
 
             //Debug.WriteLine(ViewData["Role"]);
-            Users = _context.getAllUsers();
-
+            //Users = _context.getAllUsers();
             //for (int i = 0; i < 0; i++)
             //{
             //    if (Users[i].U_ID == id)
