@@ -8,6 +8,8 @@ using YYRA_Team_Project.Models;
 using Microsoft.AspNetCore.Http;
 using System.Text;
 using Microsoft.AspNetCore.Hosting;
+using YYRA_Team_Project.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -15,11 +17,11 @@ namespace YYRA_Team_Project.Pages.Users
     {
         [BindProperty]
         public User USERS { get; set; }
-        private readonly MockUserList _mockUserList;
         private IWebHostEnvironment _environment;
-        public UserProfileModel()
+        private YYRA_Team_ProjectContext _context;
+        public UserProfileModel(YYRA_Team_ProjectContext context)
         {
-            _mockUserList = new MockUserList();
+            _context = context;
         }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -47,11 +49,9 @@ namespace YYRA_Team_Project.Pages.Users
                 string ID = Encoding.UTF8.GetString(str, 0, str.Length);
                 ViewData["Id"] = ID;
             }
-            User supposedUser = _mockUserList.getUser(id);
-            if(supposedUser.U_Username.Equals(ViewData["Username"]))
-            {
-                USERS = supposedUser;
-            }
+
+            USERS = await _context.Users.FirstOrDefaultAsync(m => m.U_ID == id);
+
             return Page();
         }
 
@@ -79,12 +79,14 @@ namespace YYRA_Team_Project.Pages.Users
 
             if (!ModelState.IsValid)
                 return Page();
+            _context.Attach(USERS).State = EntityState.Modified;
 
-            User supposedUser = _mockUserList.getUser(id);
-            if (supposedUser.U_Username.Equals(ViewData["Username"]))
+            try
             {
-                USERS.U_ID = int.Parse(id.ToString());
-                _mockUserList.setUser(USERS);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
             }
 
             return Redirect("/Users/FuelQuoteForm?id="+USERS.U_ID.ToString());

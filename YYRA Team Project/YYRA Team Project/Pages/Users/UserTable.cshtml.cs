@@ -10,7 +10,7 @@ using YYRA_Team_Project.Pages.Users;
 using System.Diagnostics;
 using System.Text;
 
-namespace YYRA_Team_Project
+namespace YYRA_Team_Project.Pages.Users
 {
     public class UserTableModel : PageModel
     {

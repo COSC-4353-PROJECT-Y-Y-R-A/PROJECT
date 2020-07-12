@@ -886,3 +886,14 @@ C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Projec
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistoryDisplay.cshtml.g.cs
 C:\Users\Youngjoon\Documents\projects\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserQuotes.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Create.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Delete.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs

@@ -14,7 +14,12 @@ namespace YYRA_Team_Project.Data
             : base(options)
         {
         }
-        public List<User> Users { get; set; }
+
+        public YYRA_Team_ProjectContext()
+        {
+        }
+
+        public DbSet<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
 
