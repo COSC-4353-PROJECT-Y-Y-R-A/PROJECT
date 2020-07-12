@@ -58,7 +58,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
                 connection.Close();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("/Index");
         }
     }
 }
