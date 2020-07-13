@@ -18,6 +18,9 @@ namespace YYRA_Team_Project.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
+
+        public DbSet<ClientInfo> ClientInfos { get; set; }
+        public DbSet<UserCred> UserCreds { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
 
         public string getUsername(IMemoryCache cache)
@@ -110,6 +113,8 @@ namespace YYRA_Team_Project.Data
         {
             modelBuilder.Entity<Quote>().ToTable("Quote");
             modelBuilder.Entity<User>().ToTable("Users");
+            modelBuilder.Entity<ClientInfo>().ToTable("ClientInformation");
+            modelBuilder.Entity<UserCred>().ToTable("UserCredentials");
         }
     }
 }

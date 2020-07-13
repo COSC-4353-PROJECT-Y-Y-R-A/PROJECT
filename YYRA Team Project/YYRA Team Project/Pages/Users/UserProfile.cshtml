@@ -17,34 +17,35 @@
     <div class="column-left">
         <h3>@ViewData["Username"]'s profile</h3>
         <form method="post">
+            
             <div class="form-group" hidden>
-                <label asp-for="USERS.U_Username" class="control-label"></label>
-                <input asp-for="USERS.U_Username" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Username" class="text-danger"></span>
+                <label asp-for="USERS.U_ID" class="control-label"></label>
+                <input asp-for="USERS.U_ID" type="text" class="form-control" />
+                <span asp-validation-for="USERS.U_ID" class="text-danger"></span>
             </div>
             <div class="form-group" hidden>
-                <label asp-for="USERS.U_Pass" class="control-label"></label>
-                <input asp-for="USERS.U_Pass" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Pass" class="text-danger"></span>
+                <label asp-for="USERS.C_ID" class="control-label"></label>
+                <input asp-for="USERS.C_ID" type="text" class="form-control" />
+                <span asp-validation-for="USERS.C_ID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_FullName" class="control-label"></label>
-                <input asp-for="USERS.U_FullName" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_FullName" class="text-danger"></span>
+                <label asp-for="USERS.P_Name" class="control-label"></label>
+                <input asp-for="USERS.P_Name.Trim()" type="text" class="form-control" />
+                <span asp-validation-for="USERS.P_Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="USERS.U_Address1" class="control-label"></label>
-                <input asp-for="USERS.U_Address1" type="text" class="form-control" />
+                <input asp-for="USERS.U_Address1.Trim()" type="text" class="form-control" />
                 <span asp-validation-for="USERS.U_Address1" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="USERS.U_Address2" class="control-label"></label>
-                <input asp-for="USERS.U_Address2" type="text" class="form-control" />
+                <input asp-for="USERS.U_Address2.Trim()" type="text" class="form-control" />
                 <span asp-validation-for="USERS.U_Address2" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="USERS.U_City" class="control-label"></label>
-                <input asp-for="USERS.U_City" type="text" class="form-control" />
+                <input asp-for="USERS.U_City.Trim()" type="text" class="form-control" />
                 <span asp-validation-for="USERS.U_City" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -104,13 +105,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="USERS.U_Zipcode" class="control-label"></label>
-                <input asp-for="USERS.U_Zipcode" type="text" class="form-control" />
+                <input asp-for="USERS.U_Zipcode.Trim()" type="text" class="form-control" />
                 <span asp-validation-for="USERS.U_Zipcode" class="text-danger"></span>
             </div>
-           
-            @{ 
+
+            @{
                 //Model.USERS.U_Username = ViewData["Username"].ToString();
-                
+
             }
             <div class="form-group text-center">
                 <input type="submit" value="Save" class="btn btn-primary text-center" />

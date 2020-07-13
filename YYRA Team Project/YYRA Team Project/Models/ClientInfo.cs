@@ -1,43 +1,24 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace YYRA_Team_Project.Models
 {
-    public class User
+    public class ClientInfo
     {
         // User for regex expressions - https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
-        private const string username_error_message = "The Username must be between 8-16 characters, must have one letter and one number.";
-        private const string password_error_message = "The Password must be between 8-16 characters, have one uppercase letter, one lowercase letter, one number, and one special character. Special characters include (@,$,!,%,*,?,&)";
-        private const string email_error_message = "The email address must be a valid email address.";
         private const string address1_error_message = "The addresses length must be between 1 and 100 characters and no special characters.";
         private const string city_error_message = "The city length must equal to or less than 100 characters and all letters.";
         private const string zipcode_error_message = "The zipcode length must be between 5 and 9 characters and all numbers.";
         private const string name_error_message = "The name length must equal to or less than 50 characters and all letters.";
         [Key]
-        [Display(Name = "U_ID")]
-        public int U_ID { get; set; }
-
-        [Display(Name = "Username")]
-        [Required]
-        [MinLength(8, ErrorMessage = username_error_message)]
-        [MaxLength(16, ErrorMessage = username_error_message)]
-        [RegularExpression("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
-            , ErrorMessage = username_error_message)]
-        public string U_Username { get; set; }
-
-        [Display(Name = "Password")]
-        [Required]
-        [MinLength(8, ErrorMessage = password_error_message)]
-        [MaxLength(16, ErrorMessage = password_error_message)]
-        [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
-           , ErrorMessage = password_error_message)] 
-        public string U_Pass { get; set; }
-
+        [Display(Name = "C_ID")]
+        public int C_ID { get; set; }
 
         [Display(Name = "Full name")]
         [MinLength(1, ErrorMessage = name_error_message)]
         [MaxLength(50, ErrorMessage = name_error_message)]
         [RegularExpression("^[a-zA-Z_ ]*$", ErrorMessage = name_error_message)]
-        public string U_FullName { get; set; }
+        public string P_Name { get; set; }
 
         [Display(Name = "Address 1")]
         [MinLength(1, ErrorMessage = address1_error_message)]
@@ -66,14 +47,8 @@ namespace YYRA_Team_Project.Models
         [RegularExpression("^[0-9]{5,9}$", ErrorMessage = zipcode_error_message)]
         public string U_Zipcode { get; set; }
 
-        [Display(Name = "Email")]
-        [RegularExpression("([a-zA-Z0-9])*@([a-zA-Z])*((\\.com)|(\\.net))"
-            , ErrorMessage = email_error_message)]
-        public string U_Email { get; set; }
-
-        [Display(Name = "Role")]
-        [Required]
-        public string U_Role { get; set; } //Admin or Client
-
+        [Display(Name = "U_ID")]
+        [ForeignKey("UserId")]
+        public int U_ID { get; set; }
     }
 }

@@ -105,7 +105,7 @@ namespace Project_Tests
 
                 try
                 {
-                    var t = await model.OnPostAsync(id);
+                    await model.OnPostAsync(id);
 
                 }
                 catch (Exception e)
@@ -135,7 +135,7 @@ namespace Project_Tests
 
                 try
                 {
-                    var t = await model.OnPostAsync(id);
+                    await model.OnPostAsync(id);
 
                 }
                 catch (Exception e)
