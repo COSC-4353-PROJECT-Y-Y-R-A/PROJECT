@@ -35,6 +35,28 @@ namespace YYRA_Team_Project.Data
         {
             return cache.Get<String>("Id");
         }
+
+        internal void createUser(User user)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
+            {
+                SqlCommand cmd = new SqlCommand("dbo.add_new_user", sqlConnection);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                sqlConnection.Open();
+
+                cmd.Parameters.AddWithValue("@username", user.U_Username);
+                cmd.Parameters.AddWithValue("@password", user.U_Pass);
+
+                //Do not erase these, for some reason doesnt work unless it gets the return tables of the stored
+                //procs
+                SqlDataReader rdr = cmd.ExecuteReader();
+                Console.Write(rdr.Read());
+
+                sqlConnection.Close();
+            }
+            
+        }
+
         internal List<User> getAllUsers()
         {
             List<User> users = new List<User>();        
