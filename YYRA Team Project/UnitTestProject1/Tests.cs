@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Project_Tests
 {
+    
     [TestClass]
     public class Tests
     {
@@ -42,7 +43,7 @@ namespace Project_Tests
                 memoryCache.Set<String>("Role", "");
                 memoryCache.Set<String>("Id", "");
 
-                var model = new QuoteHistoryDisplayModel(quoteRepository, context , memoryCache);
+                var model = new QuoteHistoryDisplayModel(quoteRepository, context); //commented out memorycache 
 
                 try
                 {
@@ -54,7 +55,9 @@ namespace Project_Tests
                     Assert.Fail(e.ToString());
                 }
             }
-        }
+   
+        } 
+
         [TestMethod]
         public async Task UserProfile_OnGet_Test()
         {
@@ -164,7 +167,7 @@ namespace Project_Tests
 
                 try
                 {
-                    var t = await model.OnGetAsync(id);
+                    var t = await model.OnGetAsync((int)id); 
 
                 }
                 catch (Exception e)
