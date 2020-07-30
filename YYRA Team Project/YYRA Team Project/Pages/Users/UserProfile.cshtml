@@ -30,50 +30,22 @@
             </div>
             <div class="form-group">
                 <label asp-for="@Model.USERS.P_Name" class="control-label"></label>
-                @if (Model.USERS.P_Name == null)
-                {
-                    <input asp-for="@Model.USERS.P_Name" type="text" class="form-control" />
-                }
-                else
-                {
-                    <input asp-for="@Model.USERS.P_Name.Replace(" ", "")" type="text" class="form-control" />
-                }
+                <input asp-for="@Model.USERS.P_Name" type="text" class="form-control" />
                 <span asp-validation-for="@Model.USERS.P_Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="@Model.USERS.U_Address1" class="control-label"></label>
-                @if (Model.USERS.U_Address1 == null)
-                {
-                    <input asp-for="@Model.USERS.U_Address1" type="text" class="form-control" />
-                }
-                else
-                {
-                    <input asp-for="@Model.USERS.U_Address1.Replace(" ", "")" type="text" class="form-control" />
-                }
+                <input asp-for="@Model.USERS.U_Address1" type="text" class="form-control" />
                 <span asp-validation-for="@Model.USERS.U_Address1" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="@Model.USERS.U_Address2" class="control-label"></label>
-                @if (Model.USERS.U_Address2 == null)
-                {
-                    <input asp-for="@Model.USERS.U_Address2" type="text" class="form-control" />
-                }
-                else
-                {
-                    <input asp-for="@Model.USERS.U_Address2.Replace(" ", "")" type="text" class="form-control" />
-                }
+                <input asp-for="@Model.USERS.U_Address2" type="text" class="form-control" />
                 <span asp-validation-for="@Model.USERS.U_Address2" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="@Model.USERS.U_City" class="control-label"></label>
-                @if (Model.USERS.U_City == null)
-                {
-                    <input asp-for="@Model.USERS.U_City" type="text" class="form-control" />
-                }
-                else
-                {
-                    <input asp-for="@Model.USERS.U_City.Replace(" ", "")" type="text" class="form-control" />
-                }
+                <input asp-for="@Model.USERS.U_City" type="text" class="form-control" />
                 <span asp-validation-for="@Model.USERS.U_City" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -133,14 +105,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="@Model.USERS.U_Zipcode" class="control-label"></label>
-                @if (Model.USERS.U_Zipcode == null)
-                {
-                    <input asp-for="@Model.USERS.U_Zipcode" type="text" class="form-control" />
-                }
-                else
-                {
-                    <input asp-for="@Model.USERS.U_Zipcode.Replace(" ", "")" type="text" class="form-control" />
-                }
+                <input asp-for="@Model.USERS.U_Zipcode" type="text" class="form-control" />
                 <span asp-validation-for="@Model.USERS.U_Zipcode" class="text-danger"></span>
             </div>
 
