@@ -15,42 +15,70 @@
 
 <div class="row">
     <div class="column-left">
-        <h3>@ViewData["Username"]'s profile</h3>
+        <h3>@ViewData["Username"] Profile</h3>
         <form method="post">
             
             <div class="form-group" hidden>
-                <label asp-for="USERS.U_ID" class="control-label"></label>
-                <input asp-for="USERS.U_ID" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_ID" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_ID" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_ID" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_ID" class="text-danger"></span>
             </div>
             <div class="form-group" hidden>
-                <label asp-for="USERS.C_ID" class="control-label"></label>
-                <input asp-for="USERS.C_ID" type="text" class="form-control" />
-                <span asp-validation-for="USERS.C_ID" class="text-danger"></span>
+                <label asp-for="@Model.USERS.C_ID" class="control-label"></label>
+                <input asp-for="@Model.USERS.C_ID" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.C_ID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.P_Name" class="control-label"></label>
-                <input asp-for="USERS.P_Name.Trim()" type="text" class="form-control" />
-                <span asp-validation-for="USERS.P_Name" class="text-danger"></span>
+                <label asp-for="@Model.USERS.P_Name" class="control-label"></label>
+                @if (Model.USERS.P_Name == null)
+                {
+                    <input asp-for="@Model.USERS.P_Name" type="text" class="form-control" />
+                }
+                else
+                {
+                    <input asp-for="@Model.USERS.P_Name.Replace(" ", "")" type="text" class="form-control" />
+                }
+                <span asp-validation-for="@Model.USERS.P_Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_Address1" class="control-label"></label>
-                <input asp-for="USERS.U_Address1.Trim()" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Address1" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Address1" class="control-label"></label>
+                @if (Model.USERS.U_Address1 == null)
+                {
+                    <input asp-for="@Model.USERS.U_Address1" type="text" class="form-control" />
+                }
+                else
+                {
+                    <input asp-for="@Model.USERS.U_Address1.Replace(" ", "")" type="text" class="form-control" />
+                }
+                <span asp-validation-for="@Model.USERS.U_Address1" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_Address2" class="control-label"></label>
-                <input asp-for="USERS.U_Address2.Trim()" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Address2" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Address2" class="control-label"></label>
+                @if (Model.USERS.U_Address2 == null)
+                {
+                    <input asp-for="@Model.USERS.U_Address2" type="text" class="form-control" />
+                }
+                else
+                {
+                    <input asp-for="@Model.USERS.U_Address2.Replace(" ", "")" type="text" class="form-control" />
+                }
+                <span asp-validation-for="@Model.USERS.U_Address2" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_City" class="control-label"></label>
-                <input asp-for="USERS.U_City.Trim()" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_City" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_City" class="control-label"></label>
+                @if (Model.USERS.U_City == null)
+                {
+                    <input asp-for="@Model.USERS.U_City" type="text" class="form-control" />
+                }
+                else
+                {
+                    <input asp-for="@Model.USERS.U_City.Replace(" ", "")" type="text" class="form-control" />
+                }
+                <span asp-validation-for="@Model.USERS.U_City" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_State" class="control-label"></label>
-                <select asp-for="USERS.U_State">
+                <label asp-for="@Model.USERS.U_State" class="control-label"></label>
+                <select asp-for="@Model.USERS.U_State">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -104,9 +132,16 @@
                 </select>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_Zipcode" class="control-label"></label>
-                <input asp-for="USERS.U_Zipcode.Trim()" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Zipcode" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Zipcode" class="control-label"></label>
+                @if (Model.USERS.U_Zipcode == null)
+                {
+                    <input asp-for="@Model.USERS.U_Zipcode" type="text" class="form-control" />
+                }
+                else
+                {
+                    <input asp-for="@Model.USERS.U_Zipcode.Replace(" ", "")" type="text" class="form-control" />
+                }
+                <span asp-validation-for="@Model.USERS.U_Zipcode" class="text-danger"></span>
             </div>
 
             @{
