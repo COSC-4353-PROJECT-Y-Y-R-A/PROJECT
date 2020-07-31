@@ -2,7 +2,9 @@
 @model YYRA_Team_Project.Pages.Users.QuoteHistoryDisplayModel
 @{
     ViewData["Title"] = "Quote History Display";
-   
+    ViewData["Username"] = Model._context.getUsername(Model._cache);
+    ViewData["Role"] = Model._context.getRole(Model._cache);
+    ViewData["Id"] = Model._context.getId(Model._cache);
 }
 
 <h1>Quote History</h1>

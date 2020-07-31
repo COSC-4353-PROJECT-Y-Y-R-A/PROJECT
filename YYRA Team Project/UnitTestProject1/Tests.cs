@@ -147,7 +147,7 @@ namespace Project_Tests
         [TestMethod]
         public async Task UserProfile_OnGet_Id_Null_TestAsync()
         {
-            int? id = null;
+            int id = 0;
             DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
             using (var context = new YYRA_Team_ProjectContext(a))
             {
