@@ -1,6 +1,9 @@
 ﻿@page
 @model YYRA_Team_Project.Pages.Users.UserProfileModel
 @{
+    ViewData["Username"] = Model._context.getUsername(Model._cache);
+    ViewData["Role"] = Model._context.getRole(Model._cache);
+    ViewData["Id"] = Model._context.getId(Model._cache);
 }
 <style>
     .column-left {
@@ -12,41 +15,42 @@
 
 <div class="row">
     <div class="column-left">
-        <h3>@ViewData["Username"] 's profile</h3>
+        <h3>@ViewData["Username"] Profile</h3>
         <form method="post">
+            
             <div class="form-group" hidden>
-                <label asp-for="USERS.U_Username" class="control-label"></label>
-                <input asp-for="USERS.U_Username" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Username" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_ID" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_ID" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_ID" class="text-danger"></span>
             </div>
             <div class="form-group" hidden>
-                <label asp-for="USERS.U_Pass" class="control-label"></label>
-                <input asp-for="USERS.U_Pass" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Pass" class="text-danger"></span>
+                <label asp-for="@Model.USERS.C_ID" class="control-label"></label>
+                <input asp-for="@Model.USERS.C_ID" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.C_ID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_FullName" class="control-label"></label>
-                <input asp-for="USERS.U_FullName" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_FullName" class="text-danger"></span>
+                <label asp-for="@Model.USERS.P_Name" class="control-label"></label>
+                <input asp-for="@Model.USERS.P_Name" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.P_Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_Address1" class="control-label"></label>
-                <input asp-for="USERS.U_Address1" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Address1" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Address1" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_Address1" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_Address1" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_Address2" class="control-label"></label>
-                <input asp-for="USERS.U_Address2" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Address2" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Address2" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_Address2" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_Address2" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_City" class="control-label"></label>
-                <input asp-for="USERS.U_City" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_City" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_City" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_City" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_City" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_State" class="control-label"></label>
-                <select asp-for="USERS.U_State">
+                <label asp-for="@Model.USERS.U_State" class="control-label"></label>
+                <select asp-for="@Model.USERS.U_State">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -100,14 +104,14 @@
                 </select>
             </div>
             <div class="form-group">
-                <label asp-for="USERS.U_Zipcode" class="control-label"></label>
-                <input asp-for="USERS.U_Zipcode" type="text" class="form-control" />
-                <span asp-validation-for="USERS.U_Zipcode" class="text-danger"></span>
+                <label asp-for="@Model.USERS.U_Zipcode" class="control-label"></label>
+                <input asp-for="@Model.USERS.U_Zipcode" type="text" class="form-control" />
+                <span asp-validation-for="@Model.USERS.U_Zipcode" class="text-danger"></span>
             </div>
-           
-            @{ 
+
+            @{
                 //Model.USERS.U_Username = ViewData["Username"].ToString();
-                
+
             }
             <div class="form-group text-center">
                 <input type="submit" value="Save" class="btn btn-primary text-center" />

@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Http;
 using YYRA_Team_Project.Pages.Users;
 using System.Diagnostics;
 using System.Text;
+using Microsoft.Extensions.Caching.Memory;
+using YYRA_Team_Project.Data;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -17,39 +19,21 @@ namespace YYRA_Team_Project.Pages.Users
         public IList<User> Users { get; set; }
         public int currentID;
 
-        private readonly YYRA_Team_Project.Data.YYRA_Team_ProjectContext _context;
+        public readonly YYRA_Team_ProjectContext _context;
+        public readonly IMemoryCache _cache;
 
-        public UserTableModel(YYRA_Team_Project.Data.YYRA_Team_ProjectContext context)
+        public UserTableModel(YYRA_Team_ProjectContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public void OnGetAsync(int? id)
         {
             Users = _context.getAllUsers();
-            if (HttpContext.Session.Get("Username") != null)
-            {
-                byte[] str = HttpContext.Session.Get("Username");
-                string Username = Encoding.UTF8.GetString(str, 0, str.Length);
-                ViewData["Username"] = Username;
-            }
-
-            if (HttpContext.Session.Get("Role") != null)
-            {
-                byte[] str = HttpContext.Session.Get("Role");
-                string Role = Encoding.UTF8.GetString(str, 0, str.Length);
-                ViewData["Role"] = Role;
-            }
-            if (HttpContext.Session.Get("Id") != null)
-            {
-                byte[] str = HttpContext.Session.Get("Id");
-                string ID = Encoding.UTF8.GetString(str, 0, str.Length);
-                ViewData["Id"] = ID;
-            }
 
             //Debug.WriteLine(ViewData["Role"]);
-            Users = _context.getAllUsers();
-
+            //Users = _context.getAllUsers();
             //for (int i = 0; i < 0; i++)
             //{
             //    if (Users[i].U_ID == id)

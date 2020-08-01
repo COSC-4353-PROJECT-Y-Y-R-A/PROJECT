@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using YYRA_Team_Project.Models;
 
 namespace YYRA_Team_Project.Data
@@ -15,13 +16,46 @@ namespace YYRA_Team_Project.Data
         {
         }
 
-        public YYRA_Team_ProjectContext()
-        {
-        }
-
         public DbSet<User> Users { get; set; }
         public DbSet<Quote> Quote { get; set; }
+
+        public DbSet<ClientInfo> ClientInfos { get; set; }
+        public DbSet<UserCred> UserCreds { get; set; }
         public string connection = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
+
+        public string getUsername(IMemoryCache cache)
+        {
+            return cache.Get<String>("Username");
+        }
+        public string getRole(IMemoryCache cache)
+        {
+            return cache.Get<String>("Role");
+        }
+        public string getId(IMemoryCache cache)
+        {
+            return cache.Get<String>("Id");
+        }
+
+        internal void createUser(User user)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
+            {
+                SqlCommand cmd = new SqlCommand("dbo.add_new_user", sqlConnection);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                sqlConnection.Open();
+
+                cmd.Parameters.AddWithValue("@username", user.U_Username);
+                cmd.Parameters.AddWithValue("@password", user.U_Pass);
+
+                //Do not erase these, for some reason doesnt work unless it gets the return tables of the stored
+                //procs
+                SqlDataReader rdr = cmd.ExecuteReader();
+                Console.Write(rdr.Read());
+
+                sqlConnection.Close();
+            }
+            
+        }
 
         internal List<User> getAllUsers()
         {
@@ -101,6 +135,8 @@ namespace YYRA_Team_Project.Data
         {
             modelBuilder.Entity<Quote>().ToTable("Quote");
             modelBuilder.Entity<User>().ToTable("Users");
+            modelBuilder.Entity<ClientInfo>().ToTable("ClientInformation");
+            modelBuilder.Entity<UserCred>().ToTable("UserCredentials");
         }
     }
 }

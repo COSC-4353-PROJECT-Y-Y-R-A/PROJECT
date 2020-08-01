@@ -28,11 +28,12 @@ namespace YYRA_Team_Project
             services.AddRazorPages();
             services.AddMvc();
             services.AddSession();
+            services.AddMemoryCache();
             services.AddDbContext<YYRA_Team_ProjectContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("YYRA_Team_ProjectContext")));
 
             //dependency injection for quote history
-            services.AddSingleton<IQuoteRepository, MockQuoteRepository>();
+            services.AddScoped<IQuoteRepository, SQLQuoteRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

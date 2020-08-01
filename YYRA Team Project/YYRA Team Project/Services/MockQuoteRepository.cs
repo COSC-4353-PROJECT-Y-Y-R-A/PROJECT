@@ -6,11 +6,12 @@ using YYRA_Team_Project.Models;
 
 namespace YYRA_Team_Project
 {
+    //mock quote stored in inmemory repo
     public class MockQuoteRepository : IQuoteRepository
     {
         private List<Quote> _quoteList;
 
-        //hardcode quotes 
+
         public MockQuoteRepository()
         {
             _quoteList = new List<Quote>()
@@ -32,7 +33,25 @@ namespace YYRA_Team_Project
             };
 
         }
-      
+
+
+        //TODO
+        public Quote Add(Quote newQuote)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Quote Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Quote Update(Quote updatedQuote)
+        {
+
+            throw new NotImplementedException(); 
+        }
+
         public IEnumerable<Quote> GetAllQuotes()
         {
             return _quoteList;

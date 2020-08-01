@@ -10,5 +10,10 @@ namespace YYRA_Team_Project
     {
         IEnumerable<Quote> GetAllQuotes();
         Quote GetQuote(int id);
+
+        Quote Update(Quote updatedQuote);
+        Quote Add(Quote newQuote);
+        Quote Delete(int id);
+        
     }
 }

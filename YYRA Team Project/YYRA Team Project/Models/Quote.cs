@@ -17,10 +17,9 @@ namespace YYRA_Team_Project.Models
          * 
          */
 
-        //quote ID for DB-REMOVED FOR NOW
-        //public int ID { get; set; }
+        
 
-        //user id for quote
+        [Key]
         public int UserID { get; set; }
 
         [Display(Name = "Gallons Requested")]
