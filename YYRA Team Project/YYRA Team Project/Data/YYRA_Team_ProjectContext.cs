@@ -105,8 +105,9 @@ namespace YYRA_Team_Project.Data
 
                     using (SqlCommand command = new SqlCommand(query, connectionString))
                     {
+                        string address = GetAddress(_cache);
                         command.Parameters.AddWithValue("@Q_Gallons", quote.Q_Gallons);
-                        command.Parameters.AddWithValue("@Q_Address", "123123");
+                        command.Parameters.AddWithValue("@Q_Address", address);
                         command.Parameters.AddWithValue("@Q_Date", quote.Q_Date);
 
                         string userState = GetState(_cache);
