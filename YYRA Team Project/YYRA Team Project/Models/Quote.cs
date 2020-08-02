@@ -16,8 +16,8 @@ namespace YYRA_Team_Project.Models
          * total amount due
          * 
          */
-
-        
+        [Key]
+        public int QID { get; set; } //to create composite PK with UserID
 
         [Key]
         public int UserID { get; set; }
