@@ -97,7 +97,52 @@ namespace YYRA_Team_Project.Data
             
             return users;
         }
+        public void createQuote(Quote quote, IMemoryCache _cache)
+        {
+            using (SqlConnection connectionString = new SqlConnection(connection))
+            {
+                String query = "INSERT INTO dbo.Quote (Q_Gallons, Q_Address, Q_Date, Q_Price, Q_Total) VALUES (@Q_Gallons, @Q_Address, @Q_Date, @Q_Price, @Q_Total)";
 
+                    using (SqlCommand command = new SqlCommand(query, connectionString))
+                    {
+                        command.Parameters.AddWithValue("@Q_Gallons", quote.Q_Gallons);
+                        command.Parameters.AddWithValue("@Q_Address", "123123");
+                        command.Parameters.AddWithValue("@Q_Date", quote.Q_Date);
+
+                        string userState = GetState(_cache);
+                        double locationFactor = 0.04;
+                        if(userState == "TX")
+                        {
+                            locationFactor = 0.02;
+                        }
+                        double rateHistoryFactor = 0.01;
+                        if(QuoteHistoryExists(_cache) == true)
+                        {
+                            rateHistoryFactor = 0;
+                        }
+                        double gallonRequestedFactor = 0.03;
+                        double gallonsRequested = (double)quote.Q_Gallons;
+                        if(gallonsRequested > 1000)
+                        {
+                            gallonRequestedFactor = 0.02;
+                        }
+                        double CompanyProfitFactor = 0.1;
+                    
+                        double suggestedPrice = 1.5 + 1.5 * (locationFactor - rateHistoryFactor + gallonRequestedFactor + CompanyProfitFactor);
+                        double totalPrice = gallonsRequested * suggestedPrice;
+                        command.Parameters.AddWithValue("@Q_Price", suggestedPrice);
+                        command.Parameters.AddWithValue("@Q_Total", totalPrice);
+
+                        connectionString.Open();
+                        int result = command.ExecuteNonQuery();
+
+                        // Check Error
+                        if (result < 0)
+                            Console.WriteLine("Error inserting data into Database!");
+                    }
+                    connectionString.Close();
+                }
+        }
         public User getUser(int? id)
         {
             User temp = null;
@@ -130,7 +175,86 @@ namespace YYRA_Team_Project.Data
 
             sqlConnection.Close();
         }
-
+        public String GetAddress(IMemoryCache cache)
+        {
+            string queryString =
+                "SELECT U_ID, U_Address1 FROM dbo.ClientInformation;";
+            string s = getId(cache);
+            int currentID = Int32.Parse(s);
+            using (SqlConnection connectionString = new SqlConnection(
+                       connection))
+            {
+                SqlCommand command = new SqlCommand(
+                    queryString, connectionString);
+                connectionString.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int ID = (int)reader[0];
+                        if (ID == currentID)
+                        {
+                            return (String)reader[1];
+                        }
+                        //Console.WriteLine(reader[0]);
+                        //Console.WriteLine(reader[1]);
+                    }
+                }
+            }
+            return "";
+        }
+        public String GetState(IMemoryCache cache)
+        {
+            string queryString =
+                "SELECT U_ID, U_State FROM dbo.ClientInformation;";
+            string s = getId(cache);
+            int currentID = Int32.Parse(s);
+            using (SqlConnection connectionString = new SqlConnection(
+                       connection))
+            {
+                SqlCommand command = new SqlCommand(
+                    queryString, connectionString);
+                connectionString.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int ID = (int)reader[0];
+                        if (ID == currentID)
+                        {
+                            return (String)reader[1];
+                        }
+                    }
+                }
+            }
+            return "";
+        }
+        public Boolean QuoteHistoryExists(IMemoryCache cache)
+        {
+            string queryString =
+                "SELECT UserID FROM dbo.Quote;";
+            string s = getId(cache);
+            int currentID = Int32.Parse(s);
+            using (SqlConnection connectionString = new SqlConnection(
+                       connection))
+            {
+                SqlCommand command = new SqlCommand(
+                    queryString, connectionString);
+                connectionString.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int ID = (int)reader[0];
+                        if (ID == currentID)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Quote>().ToTable("Quote");

@@ -4,6 +4,7 @@
     ViewData["Username"] = Model._context.getUsername(Model._cache);
     ViewData["Role"] = Model._context.getRole(Model._cache);
     ViewData["Id"] = Model._context.getId(Model._cache);
+    ViewData["DeliveryAddress"] = Model._context.GetAddress(Model._cache);
 }
 
 <div class="card-deck">
@@ -12,18 +13,20 @@
     </div>
     <div class="w-25">
         <form method="post">
+            <div class="form-group">
+                <label asp-for="@Model.QUOTE.Q_Gallons" class="control-label"></label>
+                <input asp-for="@Model.QUOTE.Q_Gallons" class="form-control" />
+                <span asp-validation-for="@Model.QUOTE.Q_Gallons" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.QUOTE.Q_Date" class="control-label"></label>
+                <input asp-for="@Model.QUOTE.Q_Date" class="form-control" />
+                <span asp-validation-for="@Model.QUOTE.Q_Date" class="text-danger"></span>
+            </div>
             <div>
-                <label>Gallons:</label>
-                <input type="text" />
-                <p asp-validation-for="@Model.QUOTE.Q_Address">Delivery address:</p>
-            
-                <brasp-validation-for ="@Model.QUOTE.Q_Date">
-                    Delivery date:
-                    <input type="date" />
-                    <br asp-validation-for="@Model.QUOTE.Q_Price">Suggested price:
-                    <br asp-validation-for="@Model.QUOTE.Q_Total">Total amount due:
-
-
+                <p asp-validation-for="@Model.QUOTE.Q_Address">Delivery address: @ViewData["DeliveryAddress"]</p>
+                <br asp-validation-for="@Model.QUOTE.Q_Price">Suggested price:
+                <br asp-validation-for="@Model.QUOTE.Q_Total">Total amount due:
             </div>
             <div class="form-group">
                 <input type="submit" value="Submit Form" class="btn btn-primary" />

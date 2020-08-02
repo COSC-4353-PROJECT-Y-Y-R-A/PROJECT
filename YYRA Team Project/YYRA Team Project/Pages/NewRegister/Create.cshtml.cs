@@ -10,22 +10,23 @@ using YYRA_Team_Project.Models;
 using System.Data;
 using System.Data.SqlClient;
 using Microsoft.AspNetCore.Connections.Features;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace YYRA_Team_Project.Pages.NewRegister
 {
     public class CreateModel : PageModel
     {
         private readonly YYRA_Team_ProjectContext _context;
-
-        public CreateModel(YYRA_Team_ProjectContext context)
+        public readonly IMemoryCache _cache;
+        public CreateModel(YYRA_Team_ProjectContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public IActionResult OnGet()
         {
-            Console.WriteLine("Fsadf");
-            ReadOrderData();
+
             return Page();
         }
 
@@ -33,25 +34,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
         public User User { get; set; }
 
         public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
-        public void ReadOrderData()
-        {
-            string queryString =
-                "SELECT U_ID FROM dbo.ClientInformation;";
-            using (SqlConnection connection = new SqlConnection(
-                       connectionString))
-            {
-                SqlCommand command = new SqlCommand(
-                    queryString, connection);
-                connection.Open();
-                using (SqlDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        Console.WriteLine(reader[0]);
-                    }
-                }
-            }
-        }
+        
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

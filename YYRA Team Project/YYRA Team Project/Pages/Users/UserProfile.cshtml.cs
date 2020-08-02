@@ -24,6 +24,7 @@ namespace YYRA_Team_Project.Pages.Users
         }
         public async Task<IActionResult> OnGetAsync(int id)
         {
+            
             if (id == 0)
             {
                 return NotFound();
