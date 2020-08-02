@@ -24,6 +24,8 @@ namespace YYRA_Team_Project.Pages.NewRegister
 
         public IActionResult OnGet()
         {
+            Console.WriteLine("Fsadf");
+            ReadOrderData();
             return Page();
         }
 
@@ -31,7 +33,25 @@ namespace YYRA_Team_Project.Pages.NewRegister
         public User User { get; set; }
 
         public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
-        
+        public void ReadOrderData()
+        {
+            string queryString =
+                "SELECT U_ID FROM dbo.ClientInformation;";
+            using (SqlConnection connection = new SqlConnection(
+                       connectionString))
+            {
+                SqlCommand command = new SqlCommand(
+                    queryString, connection);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Console.WriteLine(reader[0]);
+                    }
+                }
+            }
+        }
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
