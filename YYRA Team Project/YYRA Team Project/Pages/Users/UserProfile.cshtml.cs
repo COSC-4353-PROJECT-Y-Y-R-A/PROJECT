@@ -24,22 +24,16 @@ namespace YYRA_Team_Project.Pages.Users
         }
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            if (id == null)
+            if (id == 0)
             {
                 return NotFound();
             }
 
             USERS = await _context.ClientInfos.FirstOrDefaultAsync(m => m.U_ID == id);
 
-            if (USERS == null)
-            {
-                return NotFound();
-                //_context.ClientInfos.Add(USERS);
-            }
-
             return Page();
         }
-        public string connectionString = "Data Source=sql.freeasphost.net\\MSSQL2016;Persist Security Info=True;User ID=yyrateam;Password=yyrateam1";
+        
         public async Task<IActionResult> OnPostAsync(int id)
         {
             if (!ModelState.IsValid)
@@ -55,6 +49,7 @@ namespace YYRA_Team_Project.Pages.Users
             {
                 throw;
             }
+
             return Redirect("/Users/FuelQuoteForm?id="+USERS.U_ID.ToString());
         }
     }

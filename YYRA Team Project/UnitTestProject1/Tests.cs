@@ -31,7 +31,6 @@ namespace Project_Tests
             DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
             using (var context = new YYRA_Team_ProjectContext(a))
             {
-                //var mockContext = new Mock<YYRA_Team_ProjectContext>(null);
                 var services = new ServiceCollection();
                 services.AddMemoryCache();
                 var serviceProvider = services.BuildServiceProvider();
