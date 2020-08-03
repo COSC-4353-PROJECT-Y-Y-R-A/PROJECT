@@ -7,42 +7,41 @@
     ViewData["Id"] = Model._context.getId(Model._cache);
 }
 
-<h1>Quote History</h1>
+<h3>Quote History</h3>
 
-<body class="flex-wrap">
-    <table class="table table-hover">
-        <thead class=" bg-primary border shadow-sm">
+
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
             <tr>
-                <th scope="col" style="color:white">
+                <th scope="col">
                     @Html.DisplayNameFor(model => model.Quote.UserID)
                 </th>
-
-                <th scope="col" style="color:white">
+                <th scope="col">
                     @Html.DisplayNameFor(model => model.Quote.Q_Address)
                 </th>
-                <th scope="col" style="color:white">
+                <th scope="col">
                     @Html.DisplayNameFor(model => model.Quote.Q_Date)
                 </th>
-                <th scope="col" style="color:white">
+                <th scope="col">
                     @Html.DisplayNameFor(model => model.Quote.Q_Gallons)
                 </th>
-                <th scope="col" style="color:white">
+                <th scope="col">
                     @Html.DisplayNameFor(model => model.Quote.Q_Price)
                 </th>
-                <th scope="col" style="color:white">
+                <th scope="col">
                     @Html.DisplayNameFor(model => Model.Quote.Q_Total)
                 </th>
-
-                <th scope="col"></th>
             </tr>
         </thead>
-        <tbody class="bg-info align-content-center flex-row border">
+
+        <tbody>
             @foreach (var quote in Model.Quotes)
             {
                 if (quote.UserID != 1)
                 {
-                <tr class="border-top">
-                    <td scope="row">
+                <tr>
+                    <td >
                         @Html.DisplayFor(modelItem => quote.UserID)
                     </td>
                     <td>
@@ -67,5 +66,5 @@
             }
         </tbody>
     </table>
-</body>
+
 
