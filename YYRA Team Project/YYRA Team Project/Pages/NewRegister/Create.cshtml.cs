@@ -10,20 +10,23 @@ using YYRA_Team_Project.Models;
 using System.Data;
 using System.Data.SqlClient;
 using Microsoft.AspNetCore.Connections.Features;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace YYRA_Team_Project.Pages.NewRegister
 {
     public class CreateModel : PageModel
     {
         private readonly YYRA_Team_ProjectContext _context;
-
-        public CreateModel(YYRA_Team_ProjectContext context)
+        public readonly IMemoryCache _cache;
+        public CreateModel(YYRA_Team_ProjectContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public IActionResult OnGet()
         {
+
             return Page();
         }
 

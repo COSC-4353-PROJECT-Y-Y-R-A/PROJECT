@@ -4,6 +4,7 @@
     ViewData["Username"] = Model._context.getUsername(Model._cache);
     ViewData["Role"] = Model._context.getRole(Model._cache);
     ViewData["Id"] = Model._context.getId(Model._cache);
+    ViewData["DeliveryAddress"] = Model._context.GetAddress(Model._cache);
 }
 
 <div class="card-deck">
@@ -12,24 +13,34 @@
     </div>
     <div class="w-25">
         <form method="post">
-            <div>
-                <label>Gallons:</label>
-                <input type="text" />
-                <p asp-validation-for="@Model.QUOTE.Q_Address">Delivery address:</p>
-            
-                <brasp-validation-for ="@Model.QUOTE.Q_Date">
-                    Delivery date:
-                    <input type="date" />
-                    <br asp-validation-for="@Model.QUOTE.Q_Price">Suggested price:
-                    <br asp-validation-for="@Model.QUOTE.Q_Total">Total amount due:
-
-
+            <div class="form-group">
+                <label asp-for="@Model.QUOTE.Q_Gallons" class="control-label"></label>
+                <input asp-for="@Model.QUOTE.Q_Gallons" class="form-control" />
+                <span asp-validation-for="@Model.QUOTE.Q_Gallons" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit Form" class="btn btn-primary" />
+                <label asp-for="@Model.QUOTE.Q_Date" class="control-label"></label>
+                <input asp-for="@Model.QUOTE.Q_Date" class="form-control" />
+                <span asp-validation-for="@Model.QUOTE.Q_Date" class="text-danger"></span>
             </div>
-
+            <div>
+                <p asp-validation-for="@Model.QUOTE.Q_Address">Delivery address: @ViewData["DeliveryAddress"]</p>
+            </div>
+            <div class="form-group">
+                <h3>Suggested Price: @ViewData["SuggestedPrice"]</h3>
+            </div>
+            <div class="form-group">
+                <h3>Total Price: @ViewData["TotalPrice"]</h3>
+                @*<label asp-for="@Model.prices[1]" class="control-label"></label>*@
+                @*<input asp-for="@Model.prices[1]" class="form-control" readonly="@(true)">*@
+            </div>
+                <input type="submit" value="Get Suggested Price" asp-page-handler="SuggestedPriceSubmit" />
+                <input type="submit" value="Submit Form" class="btn btn-primary"  asp-page-handler="send"/>
         </form>
+
+        @*<form method="post">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>*@
     </div>
 
 </div>

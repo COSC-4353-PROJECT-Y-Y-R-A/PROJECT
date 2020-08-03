@@ -16,9 +16,10 @@ namespace YYRA_Team_Project.Models
          * total amount due
          * 
          */
-        
-        public int QID { get; set; } //to create composite PK with UserID
+        private const string date_error_message = "Date is required";
 
+
+        [Key]
         public int UserID { get; set; }
 
         [Display(Name = "Gallons Requested")]
@@ -28,6 +29,8 @@ namespace YYRA_Team_Project.Models
         public string Q_Address { get; set; }
 
         [Display(Name = "Delivery Date")]
+        [Required]
+        [MinLength(1, ErrorMessage = date_error_message)]
         //public DateTime Q_Date { get; set; }
         public string Q_Date { get; set; } //changed DateTime to string for now
 
