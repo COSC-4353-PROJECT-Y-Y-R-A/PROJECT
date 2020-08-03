@@ -16,14 +16,15 @@
                 <th scope="col" style="color:white">
                     @Html.DisplayNameFor(model => model.Quote.UserID)
                 </th>
-                <th scope="col" style="color:white">
-                    @Html.DisplayNameFor(model => model.Quote.Q_Gallons)
-                </th>
+
                 <th scope="col" style="color:white">
                     @Html.DisplayNameFor(model => model.Quote.Q_Address)
                 </th>
                 <th scope="col" style="color:white">
                     @Html.DisplayNameFor(model => model.Quote.Q_Date)
+                </th>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Quote.Q_Gallons)
                 </th>
                 <th scope="col" style="color:white">
                     @Html.DisplayNameFor(model => model.Quote.Q_Price)
@@ -38,8 +39,8 @@
         <tbody class="bg-info align-content-center flex-row border">
             @foreach (var quote in Model.Quotes)
             {
-                //if (!item.U_Role.Contains("Master"))
-                //{
+                if (quote.UserID != 1)
+                {
                 <tr class="border-top">
                     <td scope="row">
                         @Html.DisplayFor(modelItem => quote.UserID)
@@ -61,7 +62,7 @@
                     </td>
 
                 </tr>
-                //}
+                }
 
             }
         </tbody>
