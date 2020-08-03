@@ -740,6 +740,41 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Deb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.pdb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.Views.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\YYRA Team Project.Views.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csprojAssemblyReference.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfoInputs.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfo.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.input.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.output.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorCoreGenerate.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Create.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Delete.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\FuelQuoteForm.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistoryDisplay.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserLogin.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserProfile.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserQuotes.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserTable.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorTargetAssemblyInfo.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorTargetAssemblyInfo.cs
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.Views.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CopyComplete
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.Manifest.cache
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.xml
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.dll
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.pdb
+C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.genruntimeconfig.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
@@ -874,40 +909,5 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Deb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csprojAssemblyReference.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfoInputs.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.AssemblyInfo.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CoreCompileInputs.cache
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorAssemblyInfo.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.input.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.TagHelpers.output.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorCoreGenerate.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Create.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Delete.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\FuelQuoteForm.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistoryDisplay.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserLogin.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserProfile.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserQuotes.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserTable.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorTargetAssemblyInfo.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.RazorTargetAssemblyInfo.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.Views.pdb
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.csproj.CopyComplete
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.Manifest.cache
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\staticwebassets\YYRA Team Project.StaticWebAssets.xml
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.dll
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.pdb
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\YYRA Team Project.genruntimeconfig.cache

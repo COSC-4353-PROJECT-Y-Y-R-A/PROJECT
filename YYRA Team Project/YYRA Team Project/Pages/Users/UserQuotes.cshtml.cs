@@ -39,7 +39,7 @@ namespace YYRA_Team_Project.Pages.Users
         public void OnGet(int id)
         {
             //Quote = quoteRepository.GetQuote(id);
-            //Quotes = quoteRepository.GetAllQuotes();
+            Quotes = quoteRepository.GetAllQuotes();
             CurrentID = id;
         }
 

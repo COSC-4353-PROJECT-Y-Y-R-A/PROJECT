@@ -138,7 +138,7 @@ namespace YYRA_Team_Project.Data
         {
             using (SqlConnection connectionString = new SqlConnection(connection))
             {
-                String query = "INSERT INTO dbo.Quote (Q_Gallons, Q_Address, Q_Date, Q_Price, Q_Total, UserID) VALUES (@Q_Gallons, @Q_Address, @Q_Date, @Q_Price, @Q_Total, @UserID)";
+                String query = "INSERT INTO dbo.Quote (Q_Gallons, Q_Address, Q_Date, Q_Price, Q_Total, UserID,  QID) VALUES (@Q_Gallons, @Q_Address, @Q_Date, @Q_Price, @Q_Total, @UserID, @QID)";
 
                     using (SqlCommand command = new SqlCommand(query, connectionString))
                     {
@@ -172,6 +172,7 @@ namespace YYRA_Team_Project.Data
                         command.Parameters.AddWithValue("@Q_Total", totalPrice);
 
                         command.Parameters.AddWithValue("@UserID", quote.UserID);
+                        command.Parameters.AddWithValue("@QID", Quote.Count()+1);
 
                         connectionString.Open();
                         int result = command.ExecuteNonQuery();

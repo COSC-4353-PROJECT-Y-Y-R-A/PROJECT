@@ -80,6 +80,7 @@ namespace YYRA_Team_Project.Pages.Users
             Console.WriteLine("here");
             QUOTE.Q_Price = 0;
             QUOTE.Q_Total = 0;
+            QUOTE.UserID = Int32.Parse(_context.getId(_cache));
             _context.createQuote(QUOTE, _cache);
             return Page();
         }
