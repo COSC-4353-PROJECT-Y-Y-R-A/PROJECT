@@ -34,12 +34,8 @@
                 @*<label asp-for="@Model.prices[1]" class="control-label"></label>*@
                 @*<input asp-for="@Model.prices[1]" class="form-control" readonly="@(true)">*@
             </div>
-            <div class="form-group">
                 <input type="submit" value="Get Suggested Price" asp-page-handler="SuggestedPriceSubmit" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit Form" class="btn btn-primary" />
-            </div>
+                <input type="submit" value="Submit Form" class="btn btn-primary"  asp-page-handler="send"/>
         </form>
 
         @*<form method="post">

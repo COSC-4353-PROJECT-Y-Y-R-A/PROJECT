@@ -57,10 +57,7 @@ namespace YYRA_Team_Project.Pages.Users
         
         public async Task<IActionResult> OnPostSuggestedPriceSubmit()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+            
             List<double> tempPrices = _context.SuggestedPrice(QUOTE, _cache).ToList<double>();
             prices.Clear();
             prices.Add(tempPrices[0]);
@@ -72,13 +69,16 @@ namespace YYRA_Team_Project.Pages.Users
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPost()
         {
+            Console.WriteLine("he1re");
             if (!ModelState.IsValid)
             {
                 return Page();
             }
             Console.WriteLine("here");
+            QUOTE.Q_Price = 0;
+            QUOTE.Q_Total = 0;
             _context.createQuote(QUOTE, _cache);
             return Page();
         }
