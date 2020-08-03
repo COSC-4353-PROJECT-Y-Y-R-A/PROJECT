@@ -29,6 +29,7 @@ namespace Project_Tests
         public void QuoteHistoryDisplay_Onget_Test()
         {
             DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
+            
             using (var context = new YYRA_Team_ProjectContext(a))
             {
                 var services = new ServiceCollection();
@@ -46,7 +47,6 @@ namespace Project_Tests
                 try
                 {
                     model.OnGet();
-                    Assert.IsNotNull(model.User);
                 }
                 catch (Exception e)
                 {
@@ -85,6 +85,35 @@ namespace Project_Tests
             }
         }
         [TestMethod]
+        public async Task UserProfile_OnGet_Id_Null_TestAsync()
+        {
+            int id = 0;
+            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
+            using (var context = new YYRA_Team_ProjectContext(a))
+            {
+                var services = new ServiceCollection();
+                services.AddMemoryCache();
+                var serviceProvider = services.BuildServiceProvider();
+
+                var memoryCache = serviceProvider.GetService<IMemoryCache>();
+
+                memoryCache.Set<String>("Username", "");
+                memoryCache.Set<String>("Role", "");
+                memoryCache.Set<String>("Id", "");
+                var model = new UserProfileModel(context, memoryCache);
+
+                try
+                {
+                    var t = await model.OnGetAsync(id);
+
+                }
+                catch (Exception e)
+                {
+                    Assert.Fail(e.ToString());
+                }
+            }
+        }
+        [TestMethod]
         public async Task UserProfile_OnPost_TestAsync()
         {
             int id = 4;
@@ -101,6 +130,7 @@ namespace Project_Tests
                 memoryCache.Set<String>("Role", "");
                 memoryCache.Set<String>("Id", "");
                 var model = new UserProfileModel(context, memoryCache);
+                model.USERS = new ClientInfo();
 
                 try
                 {
@@ -135,35 +165,6 @@ namespace Project_Tests
                 try
                 {
                     await model.OnPostAsync(id);
-
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
-        [TestMethod]
-        public async Task UserProfile_OnGet_Id_Null_TestAsync()
-        {
-            int id = 0;
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new UserProfileModel(context, memoryCache);
-
-                try
-                {
-                    var t = await model.OnGetAsync(id);
 
                 }
                 catch (Exception e)
@@ -418,6 +419,63 @@ namespace Project_Tests
                 try
                 {
                     await model.OnGetAsync(id);
+                }
+                catch (Exception e)
+                {
+                    Assert.Fail(e.ToString());
+                }
+            }
+
+        }
+        [TestMethod]
+        public async Task FuelQuoteForm_OnPost_TestAsync()
+        {
+            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
+            using (var context = new YYRA_Team_ProjectContext(a))
+            {
+                var services = new ServiceCollection();
+                services.AddMemoryCache();
+                var serviceProvider = services.BuildServiceProvider();
+
+                var memoryCache = serviceProvider.GetService<IMemoryCache>();
+
+                memoryCache.Set<String>("Username", "");
+                memoryCache.Set<String>("Role", "");
+                memoryCache.Set<String>("Id", "");
+                var model = new FuelQuoteFormModel(context, memoryCache);
+
+                try
+                {
+                    await model.OnPostAsync();
+                }
+                catch (Exception e)
+                {
+                    Assert.Fail(e.ToString());
+                }
+            }
+
+        }
+        [TestMethod]
+        public async Task FuelQuoteForm_OnPost_TestAsync_Invalid_Model()
+        {
+            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
+            using (var context = new YYRA_Team_ProjectContext(a))
+            {
+                var services = new ServiceCollection();
+                services.AddMemoryCache();
+                var serviceProvider = services.BuildServiceProvider();
+
+                var memoryCache = serviceProvider.GetService<IMemoryCache>();
+
+                memoryCache.Set<String>("Username", "");
+                memoryCache.Set<String>("Role", "");
+                memoryCache.Set<String>("Id", "");
+                var model = new FuelQuoteFormModel(context, memoryCache);
+                model.ModelState.AddModelError("Test", "Test");
+
+                try
+                {
+                    await model.OnPostAsync();
                 }
                 catch (Exception e)
                 {

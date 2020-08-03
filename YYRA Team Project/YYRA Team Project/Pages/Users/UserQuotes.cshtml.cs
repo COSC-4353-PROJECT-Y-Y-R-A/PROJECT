@@ -38,10 +38,9 @@ namespace YYRA_Team_Project.Pages.Users
         // value to the id parameter on this OnGet() method
         public void OnGet(int id)
         {
-            Quote = quoteRepository.GetQuote(id);
-            Quotes = quoteRepository.GetAllQuotes();
-            CurrentID = id; 
-
+            //Quote = quoteRepository.GetQuote(id);
+            //Quotes = quoteRepository.GetAllQuotes();
+            CurrentID = id;
         }
 
       
