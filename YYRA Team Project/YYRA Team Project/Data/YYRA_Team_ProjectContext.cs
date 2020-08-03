@@ -36,6 +36,43 @@ namespace YYRA_Team_Project.Data
             return cache.Get<String>("Id");
         }
 
+        internal List<double> SuggestedPrice(Quote quote, IMemoryCache _cache) 
+        {
+
+            string address = GetAddress(_cache);
+            string userState = GetState(_cache);
+            double locationFactor = 0.04;
+
+            if (userState == "TX")
+            {
+                locationFactor = 0.02;
+            }
+            double rateHistoryFactor = 0.01;
+            if (QuoteHistoryExists(_cache) == true)
+            {
+                rateHistoryFactor = 0;
+            }
+
+            double gallonRequestedFactor = 0.03;
+            double gallonsRequested = (double)quote.Q_Gallons;
+            if (gallonsRequested > 1000)
+            {
+                gallonRequestedFactor = 0.02;
+            }
+
+            double CompanyProfitFactor = 0.1;
+            double suggestedPrice = 1.5 + 1.5 * (locationFactor - rateHistoryFactor + gallonRequestedFactor + CompanyProfitFactor);
+            double totalPrice = gallonsRequested * suggestedPrice;
+
+            //suggested price in 0
+            //total price in 1
+            List<double> prices = new List<double>();
+            prices.Add(suggestedPrice);
+            prices.Add(totalPrice);
+
+            return prices;
+        }
+
         internal void createUser(User user)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connection))
