@@ -32,7 +32,15 @@
                 <div class="form-group">
                     <label asp-for="@Model.QUOTE.Q_Date" class="control-label"></label>
                     @*<input asp-for="@Model.QUOTE.Q_Date" class="form-control" />*@
-                    <input asp-for="@Model.QUOTE.Q_Date" type="date" class="form-control" value="@DateTime.Now.ToString("MM-dd-yyyy")" />
+                    @{if (ViewData["Date"] != null)
+                        {
+                            <input asp-for="@Model.QUOTE.Q_Date" type="date" class="form-control" value="@ViewData["Date"]" />
+                        }
+                        else
+                        {
+                            <input asp-for="@Model.QUOTE.Q_Date" type="date" class="form-control" value="@DateTime.Now.ToString("MM-dd-yyyy")" />
+                        }
+                    }
                     <span asp-validation-for="@Model.QUOTE.Q_Date" class="text-danger"></span>
                 </div>
 

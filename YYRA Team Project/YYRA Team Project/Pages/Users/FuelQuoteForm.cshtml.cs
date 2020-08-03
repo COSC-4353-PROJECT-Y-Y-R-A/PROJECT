@@ -71,6 +71,7 @@ namespace YYRA_Team_Project.Pages.Users
             //Console.WriteLine(prices[0] + " " + prices[1]);
             ViewData["SuggestedPrice"] = prices[0];
             ViewData["TotalPrice"] = prices[1];
+            ViewData["Date"] = QUOTE.Q_Date;
 
             return this.OnGetAsync(QUOTE.UserID);
         }
