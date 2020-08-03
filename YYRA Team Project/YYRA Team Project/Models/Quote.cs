@@ -20,6 +20,8 @@ namespace YYRA_Team_Project.Models
 
 
         public int QID { get; set; }
+        
+        [Display(Name = "User ID")]
         public int UserID { get; set; }
 
         [Display(Name = "Gallons Requested")]
