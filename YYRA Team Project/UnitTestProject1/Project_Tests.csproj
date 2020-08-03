@@ -19,4 +19,10 @@
     <ProjectReference Include="..\YYRA Team Project\YYRA Team Project.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Snapshot-1-7-12-2020.dcvr.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+  </ItemGroup>
+
 </Project>

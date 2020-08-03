@@ -299,6 +299,8 @@ namespace YYRA_Team_Project.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Quote>().ToTable("Quote");
+            modelBuilder.Entity<Quote>().HasKey(c => new { c.QID, c.UserID });
+
             modelBuilder.Entity<User>().ToTable("Users");
             modelBuilder.Entity<ClientInfo>().ToTable("ClientInformation");
             modelBuilder.Entity<UserCred>().ToTable("UserCredentials");

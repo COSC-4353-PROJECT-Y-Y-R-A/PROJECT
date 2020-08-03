@@ -19,7 +19,7 @@ namespace YYRA_Team_Project.Models
         private const string date_error_message = "Date is required";
 
 
-        [Key]
+        public int QID { get; set; }
         public int UserID { get; set; }
 
         [Display(Name = "Gallons Requested")]
