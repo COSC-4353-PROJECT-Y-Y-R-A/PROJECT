@@ -47,6 +47,7 @@ namespace YYRA_Team_Project.Pages.Users
             if (QUOTE == null)
             {
                 QUOTE = new Quote();
+                QUOTE.UserID = (int)id;
                 prices = new List<double>();
                 prices.Add(0);
                 prices.Add(0);
