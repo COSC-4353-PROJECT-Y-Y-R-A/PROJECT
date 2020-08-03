@@ -11,33 +11,56 @@
 
 <body class="flex-wrap">
     <table class="table table-hover">
+        <thead class=" bg-primary border shadow-sm">
+            <tr>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Quote.UserID)
+                </th>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Quote.Q_Gallons)
+                </th>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Quote.Q_Address)
+                </th>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Quote.Q_Date)
+                </th>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => model.Quote.Q_Price)
+                </th>
+                <th scope="col" style="color:white">
+                    @Html.DisplayNameFor(model => Model.Quote.Q_Total)
+                </th>
 
+                <th scope="col"></th>
+            </tr>
+        </thead>
         <tbody class="bg-info align-content-center flex-row border">
             @foreach (var quote in Model.Quotes)
             {
                 //if (!item.U_Role.Contains("Master"))
                 //{
-                    <tr class="border-top">
-                        <td scope="row">
-                            @Html.DisplayFor(modelItem =>quote.UserID)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => quote.Q_Address)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => quote.Q_Date)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => quote.Q_Gallons)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => quote.Q_Price)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => quote.Q_Total)
-                        </td>
-                      
-                    </tr>
+                <tr class="border-top">
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => quote.UserID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Gallons)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => quote.Q_Total)
+                    </td>
+
+                </tr>
                 //}
 
             }
