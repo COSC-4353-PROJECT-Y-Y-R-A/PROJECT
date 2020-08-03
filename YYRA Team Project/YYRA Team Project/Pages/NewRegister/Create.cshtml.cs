@@ -61,6 +61,7 @@ namespace YYRA_Team_Project.Pages.NewRegister
             //    connection.Close();
             //}
             User.U_Role = "Client";
+            User.U_Pass = User.U_Pass.Trim();
             _context.createUser(User);
 
             //Console.WriteLine(User.U_Username + " " );

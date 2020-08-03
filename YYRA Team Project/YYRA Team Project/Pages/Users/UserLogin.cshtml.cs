@@ -43,7 +43,7 @@ namespace YYRA_Team_Project.Pages.Users
                 if (USERS[i].U_Username.Contains(LOGIN_USER.U_Username))
                 {
                     //and
-                    if(USERS[i].U_Pass.Contains( LOGIN_USER.U_Pass))
+                    if(USERS[i].U_Pass.Contains( LOGIN_USER.U_Pass.Trim()))
                     {
                         _cache.Set<String>("Username", USERS[i].U_Username.ToString());
                         _cache.Set<String>("Role", USERS[i].U_Role.ToString());

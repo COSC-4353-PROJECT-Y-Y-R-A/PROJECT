@@ -682,15 +682,10 @@ C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Deb
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Create.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Delete.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Details.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Edit.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\NewRegister\Index.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\FuelQuoteForm.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\QuoteHistoryDisplay.cshtml.g.cs
-C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Register.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserLogin.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserProfile.cshtml.g.cs
 C:\Users\qs\Documents\GitHub\PROJECT\YYRA Team Project\YYRA Team Project\obj\Debug\netcoreapp3.1\Razor\Pages\Users\UserQuotes.cshtml.g.cs
