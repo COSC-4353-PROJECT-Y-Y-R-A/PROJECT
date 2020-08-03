@@ -11,6 +11,8 @@ using Microsoft.Extensions.Caching.Memory;
 using YYRA_Team_Project.Data;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
+using System.ComponentModel.DataAnnotations;
 
 namespace YYRA_Team_Project.Pages.Users
 {
@@ -29,10 +31,13 @@ namespace YYRA_Team_Project.Pages.Users
         public Quote QUOTE { get; set; }
 
         [BindProperty]
-        public List<double> prices { get; set;}
+        public List<double> prices { get; set; }
+
+        [BindProperty]
+        public string dateToString { get; set; }
         //public void OnGet()
         //{
-        //    if (QUOTE == null)
+        //    if (QUOTE == nu`xll)
         //    {
         //        QUOTE = new Quote();
         //    }
@@ -77,6 +82,7 @@ namespace YYRA_Team_Project.Pages.Users
             {
                 return Page();
             }
+            
             Console.WriteLine("here");
             QUOTE.Q_Price = 0;
             QUOTE.Q_Total = 0;
