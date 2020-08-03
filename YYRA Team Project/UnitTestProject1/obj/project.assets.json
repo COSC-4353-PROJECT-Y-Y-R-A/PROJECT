@@ -8279,25 +8279,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\School\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\qs\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+      "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
       "projectName": "Project_Tests",
-      "projectPath": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
-      "packagesPath": "C:\\Users\\School\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
+      "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\Project_Tests.csproj",
+      "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\School\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8309,8 +8304,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
-              "projectPath": "C:\\Users\\School\\Desktop\\web\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
+            "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj": {
+              "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\PROJECT\\YYRA Team Project\\YYRA Team Project\\YYRA Team Project.csproj"
             }
           }
         }

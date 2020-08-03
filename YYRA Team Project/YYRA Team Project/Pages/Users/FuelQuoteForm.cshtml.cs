@@ -82,7 +82,7 @@ namespace YYRA_Team_Project.Pages.Users
             QUOTE.Q_Total = 0;
             QUOTE.UserID = Int32.Parse(_context.getId(_cache));
             _context.createQuote(QUOTE, _cache);
-            return Page();
+            return Redirect("/Users/UserQuotes/"+QUOTE.UserID);
         }
     }
 }
