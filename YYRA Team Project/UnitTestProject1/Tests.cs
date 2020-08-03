@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using YYRA_Team_Project;
 using Moq;
 using YYRA_Team_Project.Data;
+using YYRA_Team_Project.Pages.NewRegister;
 using System.Net.WebSockets;
 using System;
 using NUnit.Framework.Internal;
@@ -23,37 +24,6 @@ namespace Project_Tests
     [TestClass]
     public class Tests
     {
-        private readonly IQuoteRepository quoteRepository;
-
-        [TestMethod]
-        public void QuoteHistoryDisplay_Onget_Test()
-        {
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-
-                var model = new QuoteHistoryDisplayModel(quoteRepository, context , memoryCache);
-
-                try
-                {
-                    model.OnGet();
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
         [TestMethod]
         public async Task UserProfile_OnGet_Test()
         {
@@ -71,8 +41,6 @@ namespace Project_Tests
                 memoryCache.Set<String>("Role", "");
                 memoryCache.Set<String>("Id", "");
                 var model = new UserProfileModel(context, memoryCache);
-
-
 
                 try
                 {
@@ -105,66 +73,6 @@ namespace Project_Tests
                 try
                 {
                     var t = await model.OnGetAsync(id);
-
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
-        [TestMethod]
-        public async Task UserProfile_OnPost_TestAsync()
-        {
-            int id = 4;
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new UserProfileModel(context, memoryCache);
-                model.USERS = new ClientInfo();
-
-                try
-                {
-                    await model.OnPostAsync(id);
-
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
-        [TestMethod]
-        public async Task UserProfile_OnPost_Invalid_ModelState_TestAsync()
-        {
-            int id = 4;
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new UserProfileModel(context, memoryCache);
-                model.ModelState.AddModelError("Test", "Test");
-
-                try
-                {
-                    await model.OnPostAsync(id);
 
                 }
                 catch (Exception e)
@@ -261,34 +169,6 @@ namespace Project_Tests
             }
         }
         [TestMethod]
-        public void UserQuotes_OnGet_Test()
-        {
-            int id = 2;
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new UserQuotesModel(quoteRepository, context, memoryCache);
-
-                try
-                {
-                    model.OnGet(id);
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
-        [TestMethod]
         public void UserTable_OnGet_Test()
         {
             int id = 2;
@@ -331,11 +211,11 @@ namespace Project_Tests
                 memoryCache.Set<String>("Username", "");
                 memoryCache.Set<String>("Role", "");
                 memoryCache.Set<String>("Id", "");
-                var model = new RegisterModel(context, memoryCache);
+                var model = new CreateModel(context, memoryCache);
 
                 try
                 {
-                    Assert.IsNotNull(model.OnGet());
+                    model.OnGet();
                 }
                 catch (Exception e)
                 {
@@ -344,7 +224,7 @@ namespace Project_Tests
             }
         }
         [TestMethod]
-        public void Register_OnPost_Test()
+        public async Task Register_OnPost_Test()
         {
             DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
             using (var context = new YYRA_Team_ProjectContext(a))
@@ -358,11 +238,11 @@ namespace Project_Tests
                 memoryCache.Set<String>("Username", "");
                 memoryCache.Set<String>("Role", "");
                 memoryCache.Set<String>("Id", "");
-                var model = new RegisterModel(context, memoryCache);
+                var model = new CreateModel(context, memoryCache);
 
                 try
                 {
-                    model.OnPostAsync();
+                    await model.OnPostAsync();
                 }
                 catch (Exception e)
                 {
@@ -371,7 +251,7 @@ namespace Project_Tests
             }
         }
         [TestMethod]
-        public void Register_OnPost_Invalid_ModelState_Test()
+        public async Task Register_OnPost_Invalid_ModelState_Test()
         {
             DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
             using (var context = new YYRA_Team_ProjectContext(a))
@@ -385,12 +265,12 @@ namespace Project_Tests
                 memoryCache.Set<String>("Username", "");
                 memoryCache.Set<String>("Role", "");
                 memoryCache.Set<String>("Id", "");
-                var model = new RegisterModel(context, memoryCache);
+                var model = new CreateModel(context, memoryCache);
                 model.ModelState.AddModelError("Test", "Test");
 
                 try
                 {
-                    model.OnPostAsync();
+                    await model.OnPostAsync();
                 }
                 catch (Exception e)
                 {
@@ -419,63 +299,6 @@ namespace Project_Tests
                 try
                 {
                     await model.OnGetAsync(id);
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-
-        }
-        [TestMethod]
-        public async Task FuelQuoteForm_OnPost_TestAsync()
-        {
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new FuelQuoteFormModel(context, memoryCache);
-
-                try
-                {
-                    await model.OnPostAsync();
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-
-        }
-        [TestMethod]
-        public async Task FuelQuoteForm_OnPost_TestAsync_Invalid_Model()
-        {
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new FuelQuoteFormModel(context, memoryCache);
-                model.ModelState.AddModelError("Test", "Test");
-
-                try
-                {
-                    await model.OnPostAsync();
                 }
                 catch (Exception e)
                 {
