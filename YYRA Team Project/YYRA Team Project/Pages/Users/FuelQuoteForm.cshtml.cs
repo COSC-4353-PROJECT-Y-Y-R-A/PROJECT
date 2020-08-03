@@ -55,7 +55,7 @@ namespace YYRA_Team_Project.Pages.Users
             return Page();
         }
         
-        public async Task<IActionResult> OnPostSuggestedPriceSubmit()
+        public Task<IActionResult> OnPostSuggestedPriceSubmit()
         {
             
             List<double> tempPrices = _context.SuggestedPrice(QUOTE, _cache).ToList<double>();
@@ -66,7 +66,7 @@ namespace YYRA_Team_Project.Pages.Users
             ViewData["SuggestedPrice"] = prices[0];
             ViewData["TotalPrice"] = prices[1];
 
-            return Page();
+            return this.OnGetAsync(QUOTE.UserID);
         }
 
         public async Task<IActionResult> OnPost()
