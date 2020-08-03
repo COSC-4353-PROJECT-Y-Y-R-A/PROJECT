@@ -24,34 +24,7 @@ namespace Project_Tests
     [TestClass]
     public class Tests
     {
-        [TestMethod]
-        public async Task UserProfile_OnGet_Test()
-        {
-            int id = 2;
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new UserProfileModel(context, memoryCache);
-
-                try
-                {
-                    await model.OnGetAsync(id);
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
+        
         [TestMethod]
         public async Task UserProfile_OnGet_Id_Null_TestAsync()
         {
@@ -216,33 +189,6 @@ namespace Project_Tests
                 try
                 {
                     model.OnGet();
-                }
-                catch (Exception e)
-                {
-                    Assert.Fail(e.ToString());
-                }
-            }
-        }
-        [TestMethod]
-        public async Task Register_OnPost_Test()
-        {
-            DbContextOptions<YYRA_Team_ProjectContext> a = new DbContextOptions<YYRA_Team_ProjectContext>();
-            using (var context = new YYRA_Team_ProjectContext(a))
-            {
-                var services = new ServiceCollection();
-                services.AddMemoryCache();
-                var serviceProvider = services.BuildServiceProvider();
-
-                var memoryCache = serviceProvider.GetService<IMemoryCache>();
-
-                memoryCache.Set<String>("Username", "");
-                memoryCache.Set<String>("Role", "");
-                memoryCache.Set<String>("Id", "");
-                var model = new CreateModel(context, memoryCache);
-
-                try
-                {
-                    await model.OnPostAsync();
                 }
                 catch (Exception e)
                 {
