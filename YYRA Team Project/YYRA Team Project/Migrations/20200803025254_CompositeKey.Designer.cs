@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YYRA_Team_Project.Data;
 
 namespace YYRA_Team_Project.Migrations
 {
     [DbContext(typeof(YYRA_Team_ProjectContext))]
-    partial class YYRA_Team_ProjectContextModelSnapshot : ModelSnapshot
+    [Migration("20200803025254_CompositeKey")]
+    partial class CompositeKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
