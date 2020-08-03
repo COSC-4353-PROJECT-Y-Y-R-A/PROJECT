@@ -42,14 +42,7 @@ namespace YYRA_Team_Project.Pages.Users
 
             _context.Attach(USERS).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                throw;
-            }
+            await _context.SaveChangesAsync();
 
             return Redirect("/Users/FuelQuoteForm?id="+USERS.U_ID.ToString());
         }
